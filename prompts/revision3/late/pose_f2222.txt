@@ -1,0 +1,34 @@
+Image: assets/revision3/late/pose_f2222.png
+Role: 花朵段可见手臂RGBA来源
+Production path: work/revision3/late/pose_f2222.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/petal_prompts.json $[3].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Replace the whole visible magician in this exact frame with a complete coherent Rem from Re:Zero, in the original red magician suit, black hat, white shirt/bow/gloves and yellow cuffs. Rem has a short light sky-blue bob, long bangs covering her own right eye (viewer left), one visible blue eye, white flower hair ornament and dark crossed clips. Preserve the exact head angle, eyelid state, mouth expression and COMPLETE shoulder/arm/hand/body gesture of this individual input frame. This frame 2222 is a distinct animation state; do not reuse a generic pose. Remove all red drill braids and hair remnants, including beside neck and shoulders. Draw the neck and clothing as continuous finished artwork. Remove the floating yellow petals and Japanese text from the output (they will be separate source foreground layers). Keep the held flower if present, with its original hand grip. Flat burgundy background, original simple flat-colored hand-drawn anime style and original framing at 1280x720, no extra character, no layout change.
+
+Derivation
+{"from": "work/revision3/late/pose_f2222.png", "to": "work/rebuild/root_assets/rem_f2222.png", "evidence": ".git/final-assets-v3.json", "derivation": "export_poses.py导出engine最终sprite；本模块只用左侧手臂及肩部区域，头身由master_rgba覆盖。", "relationship": "pixel_source"}
+{"from": "work/revision3/late/pose_f2222.png", "to": "work/rebuild/root_assets/rem_f2222.png", "evidence": "work/revision3/late/export_poses.py + work/rebuild/engine.py:414-446", "derivation": "按pose_export配置别名及引擎覆盖优先级导出的最终人物像素；源帧仅用于几何配准", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/pose_f2222.png",
+  "role": "花朵段可见手臂RGBA来源",
+  "ranges": [
+    [
+      2222,
+      2224
+    ]
+  ],
+  "evidence": "work/revision3/flower/render.py: self.arms使用pose图乘arm_gate；f2206/t092复用f2200手臂，其他姿态使用同名pose。",
+  "source_images": [
+    "work/rebuild/root_assets/rem_f2222.png"
+  ],
+  "sha256": "fc9ca218afe275496cd771160f2d6a60538fe03aa9da3ecae20d1358378daa2c",
+  "derivation": "export_poses.py导出engine最终sprite；本模块只用左侧手臂及肩部区域，头身由master_rgba覆盖。"
+}

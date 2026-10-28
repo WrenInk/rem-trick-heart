@@ -1,0 +1,35 @@
+Image: assets/rebuild/late2/sofa_single_clean.png
+Role: sofa complete character RGBA
+Production path: work/rebuild/late2/sofa_single_clean.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.singleClean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Transparent EDIT TARGET Image1. Only remove the long RED dangling strand crossing from beneath blue hair down over the left side of yellow shirt/chest. This red strip and its dangling red end are leftover OLD HAIR, NOT a garment ribbon/hoodie cord. Delete red strand completely with its black outline and reconstruct continuous yellow hoodie collar and shirt, neck skin and clean yellow folds. No red tie/strap/cord/ribbon on neck or chest. Keep Rem's full body all head blue bob accessories face pose hands legs clothes shoes EXACTLY. Keep pixel geometry and placement, canvas same 1672x941. Do not rescale/recenter. Preserve TRUE alpha transparent background. Only fix this residual old hair.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/sofa_single_clean.png",
+  "role": "sofa complete character RGBA",
+  "tags": [
+    "t130"
+  ],
+  "ranges": [
+    [
+      3083,
+      3239
+    ],
+    [
+      3356,
+      3397
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t130; sofa branch replaces initial edit"
+  ],
+  "derivation": "alpha-bbox crop and resize"
+}

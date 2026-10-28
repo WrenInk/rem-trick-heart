@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f3330_neckfixed.png
+Role: actual fabric and fingertip pixel source
+Production path: work/rebuild/late2/rem_f3330_neckfixed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f3330Clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 EDIT TARGET. Fix ONLY residual old red hair. Delete long MAGENTA/RED strand over left side yellow collar/chest AND old burgundy rounded hair lock at nape underneath chin. These are old hair, not clothing. Reconstruct smooth pale neck anatomy, short sky-blue hair ends and simple continuous yellow shirt collar without red strap, cord, tie, ribbon. Remove the old strands' black outline also. Preserve downcast HALF-LIDDED blue eye, precise bowed/tilted head, face location, blue bob/flowers/clips, body grey jacket shoulder pose, duck, butterflies, original text and wine background unchanged. Identical canvas geometry. No zoom/resize/reposition. Small cleanup only.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f3330_neckfixed.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f3330"
+  ],
+  "ranges": [
+    [
+      3328,
+      3335
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=3230"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

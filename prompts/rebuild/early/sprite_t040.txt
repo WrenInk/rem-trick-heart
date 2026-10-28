@@ -1,0 +1,45 @@
+Image: assets/rebuild/early/sprite_t040.png
+Role: generated complete RGBA
+Production path: work/rebuild/early/sprite_t040.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/early/sprite_prompts_exact.json $[3].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: background-extraction and precise-object-edit. The reference is an already-correct Rem animation frame; DO NOT redesign her. Produce one RGBA PNG with ACTUAL TRANSPARENT alpha background. Keep canvas landscape1672x941, keeping all person pixels at EXACT same coordinates, scale and crop as the input: girl remains on right, empty left stays transparent. DO NOT center/enlarge/reframe. Extract the COMPLETE contiguous visible person: entire short blue bob, face, neck, both shoulders, yellow hoodie, grey jacket, both sleeves and all original fingers/hands. Remove ONLY rabbit, all caption/text, and burgundy background. Where the rabbit occludes the person, RECONSTRUCT the person's natural blue hair/skin/yellow fabric underneath, with opaque complete body; never leave a rabbit-shaped transparent hole. Preserve every visible body/hand outline and expression exactly. No rabbit remnants or ghost outlines. Original crop at bottom edge stays as-is; do not draw any new lower body, legs or feet outside original view. No long red hair or red chest strip/strap. Only hair accessory red clips remain. Precise reusable animation sprite, same simple flat anime artwork, clean antialiased alpha, no shadow, no ground.Girl visible blue eye OPEN, small gentle closed-mouth smile, both hands raised with palms up. REMOVE rabbit sitting on TOP OF HEAD entirely and reconstruct continuous natural blue bob crown beneath it, no hollow notch. Same complete neck/shoulders/chest/grey sleeves/hands. Existing short-bob/head lies roughly x915–1415,y280–690; body reaches bottom941. Preserve this size/position; do not enlarge or center the figure.
+
+Prompt 2
+Source record: work/rebuild/early/sprite_prompts_exact.json $[5].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. Image1 is the transparent Rem sprite to correct. Image2 is supporting reference ONLY for her white flower hair ornament. Image1 incorrectly lost the two WHITE FLOWERS and little white petal chain on viewer-right side of her blue bob above the red hair bow. RESTORE those exact white flowers/petal chain at the original Image2 positions on Image1 (roughly x1270–1370,y280–435 on1672x941 canvas). These are Rem's HAIR ACCESSORIES, not rabbit parts. Keep Image1 entire character, head, body, clothing, hands, expression, scale, crop, position and transparent alpha EXACTLY unchanged. NO rabbit. Do not copy rabbit/background/text from Image2. Canvas1672x941, same pixels and location. Change ONLY missing white flower ornament. Actual transparent RGBA background.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/sprite_t040.png",
+  "role": "generated complete RGBA",
+  "tags": [
+    "t040"
+  ],
+  "ranges": [
+    [
+      958,
+      964
+    ],
+    [
+      969,
+      975
+    ],
+    [
+      980,
+      982
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t040; load_sprite_override selected"
+  ]
+}

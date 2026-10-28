@@ -1,0 +1,28 @@
+Image: assets/rebuild/root_assets/rem_f0623.png
+Role: 无蝴蝶起始姿态完整重绘图
+Production path: work/rebuild/root_assets/rem_f0623.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/butterfly_prompts.json $[0].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit the source animation frame 623. Replace the entire visible red-haired magician with a complete coherent drawing of Rem from Re:Zero wearing the identical magician costume: black top hat, red suit, white shirt and gloves, yellow cuffs, heart cheek. Rem has light sky-blue SHORT bob, long fringe over HER right eye (viewer left), visible left BLUE eye, white flower hair clips and crossed dark hairpins. Preserve the exact whole body, shoulder, arm and hand pose, head tilt, mouth shape and eyelid state in this particular reference frame; this is a distinct animation pose. Rebuild the face-neck-shoulder junction as one continuous character drawing. Remove all former red hair and drill braids, including behind head/neck/shoulders, fill with original burgundy backdrop. Do not retain old human face or neck fragments. Preserve the original hand-drawn flat anime lineart, screen coordinates, crop, costume colors, props and Japanese typography. No extra characters. Same landscape 1280x720 layout.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/rebuild/root_assets/rem_f0623.png",
+  "role": "无蝴蝶起始姿态完整重绘图",
+  "ranges": [
+    [
+      621,
+      625
+    ]
+  ],
+  "evidence": "work/revision3/butterfly/render.py: Pose.__init__ sprite缺失分支仅允许f0623/f0625，直接用find_asset返回的NEW图像提取人物。",
+  "source_images": [],
+  "sha256": "d5e3950ac95b66a3dfa1905d9ec646727ed037a9bb190efe55232a56f8c14d95",
+  "derivation": "图像没有独立registered导出，直接作为此姿态可见像素来源。"
+}

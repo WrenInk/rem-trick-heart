@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f0449.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f0449.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[18].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Input image is an edit target. This image shows Rem with short blue bob, raised red sleeve, orange cuff and black magician hat. There is ONE ERRONEOUS leftover RED RECTANGULAR HAIR-CURL BLOCK sticking out horizontally to the LEFT of her head, directly below the orange cuff and BELOW the black hat brim, around x220 to x520 and y185 to y335 in this 1672x941 image. DELETE ONLY this red rectangle and its black outline, replacing it with the solid dark maroon background where outside the blue short bob, or finish Rem's blue short bob silhouette if the block overlaps blue hair. It is old spiral red hair, NOT clothing, NOT her raised sleeve. Keep her real raised arm at far left and orange cuff entirely unchanged. Keep all blue bob hair, flower accessory, face, open mouth, visible blue eye, hat, feathers, red jacket, white shirt, black bow and every other pixel unchanged. Do NOT add other objects. No remaining red hair shapes behind Rem's blue bob.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f0449.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f0449"
+  ],
+  "ranges": [
+    [
+      449,
+      454
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f0449; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

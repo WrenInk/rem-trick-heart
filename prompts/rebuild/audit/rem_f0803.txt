@@ -1,0 +1,35 @@
+Image: assets/rebuild/audit/rem_f0803.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/audit/rem_f0803.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/audit/image_prompts.json $.0803
+Association: manifest_link
+Evidence: 清单明确指定 image_prompts.json，并按同一 tag 关联产物
+
+Use case: precise-object-edit. Asset: full-frame animation redraw for coherent video character replacement. Image 1 is exact target frame 803 and pose. Image 2 is existing Rem version for identity and flat line-art style only. Repaint the ENTIRE visible person as one coherent newly drawn Rem character, including head, nape, neck, BOTH shoulders, entire oversize gray hoodie/jacket, arms, hands and visible bare lower legs. Her body is fully BACK-FACING, centered slightly left, standing upright with arms hanging straight, head tilted slightly toward screen right, left shoulder slightly lifted, with nape and hoodie collar following that precise tilt exactly as image 1. Show NO face or eyes. Replace original long magenta hair with Rem's distinctive SHORT powder-blue bob ending at nape, white flower/cross hairpin on the same side as reference. This is the intermediate swing pose: the crown remains near the original target position while the nape-length bob tips and a few short ends drift toward screen left. Retain a true SHORT bob; the original long swinging magenta hair is only evidence of movement direction, not a hairstyle to retain. Keep original target garment silhouette, sleeve angles, hem, leg positions, yellow inner hoodie at collar, image scale and crop; redraw all these as a connected layer, never just paste a head onto the source body. Remove all original long red hair and restore burgundy where it used to be, reveal and draw the correct nape/upper-back/hood under the short bob. Background and vertical Japanese text stay at exactly the original locations. Flat anime PV cel drawing, thin slightly hand-drawn black lines, flat burgundy background, no lighting or gradients. Single 16:9 full frame preferably 1280x720, no montage, no separate panels. Preserve the exact pose and position in image 1 rather than the slightly different pose/position in image 2.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/audit/rem_f0803.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f0803"
+  ],
+  "ranges": [
+    [
+      802,
+      808
+    ],
+    [
+      826,
+      832
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f0803; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

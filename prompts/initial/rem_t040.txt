@@ -1,0 +1,43 @@
+Image: assets/initial/rem_t040.png
+Role: actual fabric and fingertip pixel source
+Production path: work/assets/rem_t040.png
+Association status: partial
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[2]
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+The complete generation prompt was not preserved. Saved intent/constraints:
+{}
+
+Record notes
+work/assets/rem_t040.png: 原提示词文件只有编号、没有正文。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t040.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "t040"
+  ],
+  "ranges": [
+    [
+      958,
+      964
+    ],
+    [
+      969,
+      975
+    ],
+    [
+      980,
+      982
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=5930"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

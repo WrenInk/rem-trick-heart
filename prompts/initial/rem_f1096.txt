@@ -1,0 +1,32 @@
+Image: assets/initial/rem_f1096.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f1096.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[20].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Input image is the exact edit target, a short blue-haired Rem in yellow shirt and gray jacket. Remove the ONE remaining LONG DARK-RED HAIR STRAND draped diagonally across the yellow collar and upper chest, running from the nape/right shoulder downward-left toward the center yellow chest. It is a thin maroon curved stripe with black outlines, old red long hair mistakenly left behind. Delete this entire strand and its black outlines, restoring matching flat pale yellow shirt/hoodie cloth underneath, with only the original natural collar contour. Rem's blue bob should END at the nape with absolutely no long red strand descending below the chin. Preserve every other detail exactly: blue bob, eye, flower, face, body size, gray jacket, yellow shirt orange design, maroon background and cream-black rectangular frame. Do not change any position or add details.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f1096.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f1096"
+  ],
+  "ranges": [
+    [
+      1095,
+      1099
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1096; no later sprite override",
+    "work/revision3/early/render_repairs.py repair_turn: else out=current(f), V2 passthrough"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

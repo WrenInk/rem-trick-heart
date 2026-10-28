@@ -1,0 +1,34 @@
+Image: assets/rebuild/late2/sprite_f3336.png
+Role: generated complete RGBA
+Production path: work/rebuild/late2/sprite_f3336.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/additional_prompts.json $.prompts.sprite3336
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: background-extraction. Image1 EDIT TARGET. Extract COMPLETE visible Rem as true transparent RGBA, preserving exact source pose and original right/lower camera crop. Keep WIDE OPEN blue eye, head tilted same direction, full blue bob flowers/clips face neck grey shoulders yellow neckline/shirt. REMOVE white duck atop head and reconstruct naturally rounded complete BLUE HAIR crown beneath, no hole. Remove every butterfly, all Japanese text and wine background. No red forelocks/strings/straps on chest. Same full 1672x941 canvas and pixel placements, no centering or scaling. Do not generate additional unseen lower body. Only full source-visible character remains.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/sprite_f3336.png",
+  "role": "generated complete RGBA",
+  "tags": [
+    "f3336"
+  ],
+  "ranges": [
+    [
+      3335,
+      3342
+    ],
+    [
+      3349,
+      3356
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3336; load_sprite_override selected"
+  ]
+}

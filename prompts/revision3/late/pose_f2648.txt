@@ -1,0 +1,44 @@
+Image: assets/revision3/late/pose_f2648.png
+Role: 抛球完整人物RGBA
+Production path: work/revision3/late/pose_f2648.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/audit/juggle_sprite_prompts.json $.f2528
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Precise animation layer extraction and repair. The attached image is the ONLY edit target and pose reference. Produce a genuine TRANSPARENT RGBA full-canvas character sprite. Keep the entire visible Rem magician character in EXACTLY the same pixel-relative position, size, pose, head tilt, facial expression, limb proportions, glove finger positions, jacket silhouette and lower-leg crop as the input image. Preserve short blue bob, flower/cross/bow hair accessories, black-and-white diamond top hat with burgundy band and feather pieces, white gloves, orange-yellow cuffs with black club symbols, burgundy jacket, white shirt, black bow tie and shorts. Remove ALL juggling balls: every yellow/orange dotted sphere anywhere (floating by head, over hat, against cheek, behind fingers, in either palm), every glossy golden reflection/highlight/spark and any leftover round outline. Reconstruct the portions of the HAT diamond pattern, blue HAIR, FACE, complete white PALM and FINGERS which the balls had covered. Hands keep their original cupped/fanned pose but hold empty space now. No circular holes, erased fingertips, round cutouts or colored patches may remain. Orange cuffs are clothing and MUST remain intact; they are NOT balls. Delete the entire burgundy backdrop, cream paper frame, black frame lines, every caption and non-character mark. Only the connected character is opaque, all empty space including between fingers is truly alpha-transparent. Do not draw a checkerboard or any background, do not add shadows or outlines around the cutout, do not recenter/enlarge/change pose. Same wide 16:9 canvas as input, ideally 1672x941 or equivalent aspect. Preserve the character exactly rather than redesigning her.
+Specific pose: viewer-RIGHT hand raised high at ear level, fingers spread, viewer-LEFT hand at hip with cupped palm. Visible blue eye fully OPEN. Remove top-of-hat ball, high-hand ball and low-hand ball. Reconstruct complete diamond hat pattern and both empty white gloves; retain original bent elbow angles.
+
+Derivation
+{"from": "work/revision3/late/pose_f2648.png", "to": "work/rebuild/root_assets/juggle_registered_f2528.png", "evidence": ".git/final-assets-v3.json", "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/juggle_registered_f2528.png", "to": "work/rebuild/root_assets/juggle_sprite_f2528.png", "evidence": "work/rebuild/audit/juggle_sprite_registration.json $.f2528", "derivation": "raw_path 经配准、透明层或完整人物提取生成 registered_path", "relationship": "pixel_source"}
+{"from": "work/revision3/late/pose_f2648.png", "to": "work/rebuild/root_assets/juggle_registered_f2528.png", "evidence": "work/revision3/late/export_poses.py + work/rebuild/engine.py:414-446", "derivation": "按pose_export配置别名及引擎覆盖优先级导出的最终人物像素；源帧仅用于几何配准", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/pose_f2648.png",
+  "role": "抛球完整人物RGBA",
+  "ranges": [
+    [
+      2648,
+      2652
+    ],
+    [
+      2670,
+      2676
+    ],
+    [
+      2696,
+      2700
+    ]
+  ],
+  "evidence": "work/revision3/late/compose.py: coherent_pose在family==juggle分支立即返回self.layers[tag]，不采用head master或closed替换。",
+  "source_images": [
+    "work/rebuild/root_assets/juggle_registered_f2528.png"
+  ],
+  "sha256": "4d2bf3f72f629dfcadef07a78bc107ffab781bb0285b13a49772ef1755e4a40a",
+  "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。"
+}

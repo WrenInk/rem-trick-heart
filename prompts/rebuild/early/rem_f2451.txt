@@ -1,0 +1,31 @@
+Image: assets/rebuild/early/rem_f2451.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/early/rem_f2451.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/early/additional_late_prompts_exact.json $[4].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. Edit the source animation frame by replacing the whole visible girl with Rem from Re:Zero: short light-blue bob ending naturally at nape, blue eyes, white flower hair ornament and red crossed hairclips. Match the simple black-outline flat-color anime PV style and exact source pose/head angle/body framing. COMPLETE contiguous new head, face, neck, shoulders, grey outer jacket, yellow hoodie and hands. CRITICAL: all burgundy/red long strips on chest and collar are OLD LONG HAIR, not ribbons/straps/hood strings. Remove ALL those strips and ALL old hair down to bottom edge; reconstruct uninterrupted natural skin, neck and yellow neckline beneath. No red hair or red chest straps anywhere. Only small red hairclips on blue bob allowed. Keep exact flower/hand/prop shape and placement. Remove all Japanese words and flying butterflies, replacing those areas with the same plain wine background. Preserve original16:9 composition and crop. She holds a blue-backed card upright by her chest on viewer-right. Preserve EXACT source fingers/grip/hand and card contour/position. Expression: eyes wide open round surprise, mouth large O. Rem's hair must be short BLUE bob only, no long front locks of any color extending over yellow collar; every original magenta chest/neck strip removed completely and yellow fabric or skin rebuilt. Keep clear source pose. Remove side Japanese text and white sparkles. Match prior Rem style with white flower ornament on viewer-right blue hair.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/rem_f2451.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2451"
+  ],
+  "ranges": [
+    [
+      2448,
+      2455
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2451; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,39 @@
+Image: assets/rebuild/root_assets/registered_f1123.png
+Role: final registered complete RGBA
+Production path: work/rebuild/root_assets/registered_f1123.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/audit/overscan_f1123_prompt.txt $
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Animation production outpainting + transparent character sprite. Attached image is the exact NEW Rem pose to preserve. Remove the burgundy background, cream paper margin and black frame completely. Keep the original blue bob, face, CLOSED smiling eye, toothy smile, all head features, hair accessories, exact head tilt, neck and shoulder pose. DO NOT stretch, rescale, move, rotate or redesign the head/face.
+EXPAND THE CANVAS DOWNWARD beyond the original bottom edge by about 25% of its original height, and actually DRAW the missing connected torso down to chest/waist: continue the gray outer jacket, complete yellow hoodie collar, yellow sweatshirt across chest, natural folds and sleeves. This must be new continuous line art with proper garment anatomy, not vertical streaking, color-column stretching, a horizontal cut, or a pasted strip. The center immediately below the visible neckline must continue into a complete yellow shirt chest, no transparent hole or exposed rectangle of neck. Both sides of the gray jacket must extend naturally downward too. Keep all original upper-character pixels/face geometry as close to exact as possible, and add body BELOW them rather than shrinking the character to fit the old frame. The original frame border is gone, so do NOT cut the body along that old slanted panel edge. Subject remains offset to the RIGHT like the reference with empty transparent area at left. Output real TRANSPARENT RGBA, only the character opaque. No scenery, no text, no frame, no checkerboard drawn. Desired expanded canvas aspect approximately1280:900 (or1672:1176); enough upper-body extension to reach y900 when original 16:9 source coordinates are mapped to1280x720. Preserve head proportions exactly. Gray jacket + yellow hoodie are casual clothes, no maid dress, no new accessories.
+
+
+Derivation
+{"from": "work/rebuild/root_assets/registered_f1123.png", "to": "work/rebuild/root_assets/sprite_f1123_overscan.png", "evidence": ".git/final-assets-v2.json", "derivation": "registered by work/rebuild/audit/overscan_f1123_registration.json", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/registered_f1123.png", "to": "work/rebuild/root_assets/sprite_f1123_overscan.png", "evidence": "work/rebuild/audit/overscan_f1123_registration.json $", "derivation": "raw_path 经配准、透明层或完整人物提取生成 registered_path", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/root_assets/registered_f1123.png",
+  "role": "final registered complete RGBA",
+  "tags": [
+    "f1123"
+  ],
+  "ranges": [
+    [
+      1118,
+      1154
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1123; registered_TAG override wins",
+    "work/revision3/early/render_repairs.py repair_turn: else out=current(f), V2 passthrough"
+  ],
+  "source_image": "work/rebuild/root_assets/sprite_f1123_overscan.png",
+  "derivation": "registered by work/rebuild/audit/overscan_f1123_registration.json"
+}

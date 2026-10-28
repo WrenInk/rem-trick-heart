@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f0468.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f0468.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[3].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit this PV frame: both characters holding hands while spinning: the red-suited top-hatted magician left and gray-hoodie girl facing away right. Replace both heads and all long red hair with Rem's light sky-blue short bob; the rear view must stay rear view, short cropped blue bob to neck not long hair. Keep their intertwined hands, every clothing detail, stance, hat and limbs. Maintain original simple flat hand-drawn cartoon anime style exactly. The new character is Rem from Re:Zero. Rem has blue visible eye, white hair flowers, dark crossed hairclips. Replace only head identity and hairstyle, fill vacated red-hair areas with same flat wine-red background. Preserve absolutely all other source pixels, original clothing, pose, Japanese lyrics, all props, layout and image aspect ratio. Output 1280x720, no added words or objects.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f0468.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f0468"
+  ],
+  "ranges": [
+    [
+      464,
+      472
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f0468; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f1476.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f1476.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[7].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit the supplied source frame: the magician with closed eyes on left, holding a yellow cup in a white glove. Replace head and twin red drill braids with Rem's light sky-blue short bob, fringe covering viewer-left eye, right eye closed, white hair flower and crossed dark hairclips. Keep top hat, heart cheek, suit, cup and hands. Match original simple hand-drawn flat anime exactly. Remove every old red hair piece and patch background with flat burgundy. Preserve every other original object, clothes, Japanese lyric and background exactly, same layout, no new text, landscape 1280x720.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f1476.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f1476"
+  ],
+  "ranges": [
+    [
+      1467,
+      1543
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1476; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

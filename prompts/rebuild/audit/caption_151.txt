@@ -1,0 +1,29 @@
+Image: assets/rebuild/audit/caption_151.png
+Role: extracted original caption RGBA
+Production path: work/rebuild/audit/caption_151.png
+Association status: programmatic_or_source_layer
+
+No independently recorded generation prompt applies to this image. See the derivation or missing-record note below.
+
+Record notes
+work/rebuild/audit/caption_151.png: 从原片3636及1040帧提取、转移和拼合原有字幕字形；不是生图素材。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/audit/caption_151.png",
+  "role": "extracted original caption RGBA",
+  "tags": [
+    "t151"
+  ],
+  "ranges": [
+    [
+      3630,
+      3666
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/special_foreground.py _caption151 / CAPTION_RANGE"
+  ],
+  "derivation": "source-video extracted glyphs, no generation prompt"
+}

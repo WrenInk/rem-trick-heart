@@ -1,0 +1,30 @@
+Image: assets/rebuild/late2/sprite_f3523.png
+Role: generated complete RGBA
+Production path: work/rebuild/late2/sprite_f3523.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/additional_prompts.json $.prompts.sprite3523
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: background-extraction. Image1 EDIT TARGET. Extract FULL visible Rem character as true transparent RGBA. KEEP exact half-lidded shy eye and blue bob with CROSS HAIR CLIPS and white FLOWERS and RIBBON ornaments, face neck yellow shirt grey hoodie all sleeves, FULL raised hand and BLUE WHITE-BORDERED CARD held at exact original position over mouth. REMOVE white duck from head, reconstruct naturally rounded blue hair crown underneath; no transparent duck hole. Remove ALL butterflies, text and wine backdrop. No residual old red hair strand/ribbon/cord on chest. Keep original 1672x941 canvas, character position scale and bottom crop; do NOT recenter or move/rotate hand/card. Do not lose any finger or sleeve. No additional unseen body. Only Rem plus her held blue card remains transparent outside.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/sprite_f3523.png",
+  "role": "generated complete RGBA",
+  "tags": [
+    "f3523"
+  ],
+  "ranges": [
+    [
+      3509,
+      3543
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3523; load_sprite_override selected"
+  ]
+}

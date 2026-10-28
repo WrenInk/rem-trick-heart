@@ -1,0 +1,31 @@
+Image: assets/initial/rem_t084.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t084.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/supplementary_prompts.json $.prompts.084
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit Image 1, existing PV animation keyframe, using Image 2 ONLY as Rem character identity guide. Replace every red-haired human character with Rem from Re:Zero: pale skin, light sky-blue SHORT BOB ending at the neck, long side-swept bangs covering her right eye, blue visible eye, white flower hair ornament and small crossed magenta hairpins. Keep original exact body silhouette, garment colors, original costume, hands, pose, scale, position, face angle, expression and all surrounding elements. Remove ALL original red hair, long strands and side drill ponytails completely; shorter bob leaves exact original burgundy background wherever old long hair was. Flat 2D anime line art matching original, thin black lines, limited flat colors. Preserve 16:9 composition, EVERY text and subtitle exactly, all objects and background. No additional objects or visual redesign. Inside rectangular cream portrait frame, Rem laughs with eyes closed and mouth open leaning right; preserve original magician hat edge, heart cheek marking, suit, bowtie and Japanese paper strip.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t084.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t084"
+  ],
+  "ranges": [
+    [
+      2007,
+      2042
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t084; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,44 @@
+Image: assets/revision3/mid/panel_left_closed.png
+Role: 双框角色单次闭眼状态
+Production path: work/revision3/mid/panel_left_closed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[9].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit this source PV frame: BOTH girls in the TWO vertical ivory portrait panels facing each other in profile: magician left looking right, gray/yellow hoodie right looking left. Replace both with Rem's light sky-blue short bob. Maintain profile direction and original face angle, mouth, pose, original clothing and magician top hat. Fringe covering own right eye must remain consistent; the visible eye blue. Keep flower crossed clips, remove all red drills/long red hair, use ivory where hair removed, keep panel outlines and Japanese lyric below. Match the original simple flat-color hand-drawn cartoon anime style, same line weight. Preserve all other source objects, text, clothes, layout and aspect ratio. No new objects or words. Output same landscape 1280x720 composition.
+
+Prompt 2
+Source record: work/revision3/mid/image_prompts.json $.panel_closed
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Precise localized animation-eye edit. The attached image is our FIXED canonical two-person Rem scene. Change ONLY both visible eyes to a relaxed CLOSED eyelid line suitable for a single blink: the viewer-left magician's visible eye and viewer-right gray/yellow-clothes character's visible eye. Do not change either head position, head scale, face outline, mouth, nose, eyebrow location, hair strands, one flower chain, crossed X hairpins, hat, neck, clothes, panel borders, background or text. This is a blink, NOT a new pose or new drawing style. Remove the open iris/white inside each eye and replace that eye area with surrounding skin and a thin curved closed lash line. Keep ALL other pixels/composition as close to identical to input as possible. No extra flower chain, ribbons or accessories. Same canvas, no recentering, no resizing. We will extract only each eye patch from this result.
+
+Derivation
+{"from": "work/revision3/mid/panel_left_closed.png", "to": "work/assets/rem_f1752.png", "evidence": ".git/final-assets-v3.json", "derivation": "prepare_assets.py在固定完整NEW图上仅融合对应眼睑区域；两源分别贡献非眼部与闭眼像素。", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/panel_left_closed.png", "to": "work/revision3/mid/panel_both_closed_raw.png", "evidence": ".git/final-assets-v3.json", "derivation": "prepare_assets.py在固定完整NEW图上仅融合对应眼睑区域；两源分别贡献非眼部与闭眼像素。", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/panel_left_closed.png", "to": "work/assets/rem_f1752.png", "evidence": "work/revision3/mid/prepare_assets.py", "derivation": "以固定双人图为底，仅替换指定人物眼部", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/panel_left_closed.png", "to": "work/revision3/mid/panel_both_closed_raw.png", "evidence": "work/revision3/mid/prepare_assets.py", "derivation": "配准双眼闭合生图，只取指定眼部多边形", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/mid/panel_left_closed.png",
+  "role": "双框角色单次闭眼状态",
+  "ranges": [
+    [
+      1726,
+      1732
+    ]
+  ],
+  "evidence": "work/revision3/mid/render_mid.py: FixedPanels依据精确帧区间选择该完整卡片图；闭眼mask已烘焙，不再读mask文件。",
+  "source_images": [
+    "work/assets/rem_f1752.png",
+    "work/revision3/mid/panel_both_closed_raw.png"
+  ],
+  "sha256": "c4a1f0e43bdb111ae589539a80dc4e985e1e80480b88fab39070ee67f846698e",
+  "derivation": "prepare_assets.py在固定完整NEW图上仅融合对应眼睑区域；两源分别贡献非眼部与闭眼像素。"
+}

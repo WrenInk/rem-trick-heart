@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f0956.png
+Role: actual fabric and fingertip pixel source
+Production path: work/assets/rem_f0956.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[21].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Asset type: 1280x720 hand-drawn Japanese music video replacement keyframe. Input image 1 is the edit target. Change ONLY the red-haired anime human girl to Rem from Re:Zero. Rem has pale sky-blue chin-length short bob hair, straight side-swept bangs completely covering her own right eye (the viewer's left), one visible BLUE eye, a small white flower accessory and black hair clips. Adapt Rem to the exact very simple flat-color hand-drawn black-line style of this image; keep the original human body pose, expression, outfit and crop. Remove ALL original long dark red hair and red spiral twin-tail hair, reconstruct the original solid background in the vacated hair areas. Preserve original pink heart cheek mark if present. Keep every nonhuman element, background, Japanese lettering, butterflies, borders, props, position and colors unchanged. No new objects, no maid uniform, no gradient, no photorealism. Keep the original 16:9 1280x720 composition precisely. This precise edit is animation frame956. There is ONE girl occupying the lower-right of the frame, her HEAD IS TILTED DIAGONALLY TOWARD VIEWER LEFT in a lively pose, her mouth wide open happy, and her VIEWER-RIGHT EYE WINKING SHUT. Keep this EXACT head tilt, face scale and face location; do NOT straighten or rotate the head to upright. Rem's viewer-left eye is completely hidden by her short blue bangs, her visible viewer-right eye MUST remain winking CLOSED as the original. Preserve the WHITE RABBIT with red eye patch in its exact TILTED pose lying sideways on the upper-right of her head: rabbit ears pointing right/down, same rabbit scale and location, unchanged. Preserve both raised hands in EXACT original locations and finger arrangement: left hand near left cheek, right hand partly under gray sleeve near right shoulder. Preserve gray oversized jacket and yellow hoodie/shirt precisely, remove ALL long red hair at chest and shoulders and reconstruct the pale yellow clothing or maroon background underneath. Preserve left pale yellow vertical Japanese text box and ALL its lettering and placement. ONLY one human girl. Input image 2 is Rem CHARACTER IDENTITY reference only: copy blue bob hue, flower/clip design and simple flat linework, but DO NOT copy upright head pose, body pose, rabbit pose, clothing layout or expression from it. The original input1 head tilt and wink must be exact.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f0956.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f0956"
+  ],
+  "ranges": [
+    [
+      948,
+      958
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=5293"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f2412.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f2412.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/late_prompts.json $.f2412
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Asset type: 1280x720 anime music-video replacement keyframe. Input image 1 is the edit target. Edit only the human character's head and hairstyle into Rem from Re:Zero: pale sky-blue short bob ending at jaw/neck; long side-swept bangs hide her own right eye (viewer LEFT); visible left eye vivid blue; little white flower hair ornament and two black hair clips on viewer RIGHT. Remove all old magenta/red long hair and giant spiral pigtails completely, restore the exact flat background formerly hidden there. Retain the original simple hand-drawn black outlines and flat cel colors, no extra rendering or shading. Keep original face position, expression, body, red magician suit or grey hoodie, hands, props, scenery, text and camera crop pixel-aligned and unchanged. Only hair and eyes need replacement, not costumes. Do not introduce a maid dress, new text or decoration. Landscape 16:9 1280x720. Close-up surprised grey-hoodie girl faces front, open mouth and big round eyes, holding a large yellow tulip before the lower viewer-RIGHT side of face. Preserve tulip shape, scale and position completely; it covers part of her face and hair. Keep mouth, cheeks, grey hoodie and yellow hood and vertical Japanese caption exactly. Rem bob has viewer-LEFT eye covered by bangs, exposed viewer-RIGHT eye blue, white flower ornament on viewer right. Clear all red long hair and refill maroon backdrop. Preserve original crop and pose. Image 2 provides Rem identity ONLY: blue bob hairstyle, floral headband on viewer right and dark crossed clips. Image 1 composition and original drawing style are immutable.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f2412.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2412"
+  ],
+  "ranges": [
+    [
+      2410,
+      2419
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2412; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

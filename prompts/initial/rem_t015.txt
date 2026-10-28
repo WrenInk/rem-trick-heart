@@ -1,0 +1,31 @@
+Image: assets/initial/rem_t015.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t015.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[2].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Asset: keyframe for character replacement PV. Edit the supplied original frame: both girls inside BOTH ivory portrait panels, smiling closed-eye magician on upper left and surprised hoodie girl bottom right; replace BOTH with Rem. Keep panel outlines, cropped poses, original clothing, facial expressions and blush/heart face marking. Delete red long hair/drill pigtails, fill exposed areas with original ivory panel background. Light sky-blue short bob, fringe covering own right eye, visible left blue eye, white hair flower and crossed dark clips. Match the original simple hand-drawn flat anime lineart and palette, no photorealism. All other objects, Japanese text, burgundy background, shapes, placements and image layout must stay exactly as source. Preserve the original 1280x720 aspect ratio and coordinates. No new words or objects.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t015.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t015"
+  ],
+  "ranges": [
+    [
+      325,
+      362
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t015; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

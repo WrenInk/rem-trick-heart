@@ -1,0 +1,27 @@
+Image: assets/revision3/late/hand_f2488.png
+Role: 抛球前侧手指透明度引导层
+Production path: work/revision3/late/hand_f2488.png
+Association status: programmatic_or_source_layer
+
+No independently recorded generation prompt applies to this image. See the derivation or missing-record note below.
+
+Record notes
+work/revision3/late/hand_f2488.png: 最终代码只使用该图alpha提取球手遮挡引导，不使用RGB；程序派生遮罩，没有独立生图提示词。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/hand_f2488.png",
+  "role": "抛球前侧手指透明度引导层",
+  "ranges": [
+    [
+      2486,
+      2490
+    ]
+  ],
+  "evidence": "work/revision3/late/compose.py: 只读取hand图alpha作为guide；late_fingers/fingertips.py将其与pose alpha及glove/ink条件相交，随后以pose RGB覆盖球。",
+  "source_images": [],
+  "sha256": "a18ff1556c6c87c09afeebcae632900281fec60763974f5ee8c4729abf5ae2fe",
+  "derivation": "engine hand_overlay经export_poses.py导出；本图RGB不用于成片，仅alpha参与遮挡。最终指尖mask由代码计算，不收late_fingers的QA导出。",
+  "source_role": "alpha_only_no_independent_image_prompt"
+}

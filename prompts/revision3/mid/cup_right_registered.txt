@@ -1,0 +1,36 @@
+Image: assets/revision3/mid/cup_right_registered.png
+Role: 杯线段右侧完整人物RGBA
+Production path: work/revision3/mid/cup_right_registered.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/mid/cup_right_neck_prompt.txt $
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Precise complete-character correction and extraction. The attached image is the EXISTING NEW Rem scene. Return ONLY the viewer-RIGHT gray-jacket Rem character as a complete coherent TRANSPARENT RGBA figure, at exactly the same location, scale and full-body pose as the attached scene. Preserve her short blue bob, ONE white flower chain with X hairclip/bow, side-facing head, face expression, neck, shoulders, yellow hoodie, entire gray jacket, both hands, shorts, bare legs, yellow leg warmers and gray shoes. KEEP the yellow cup held by her raised hand and keep all finger positions and cup angle unchanged. Remove the LEFT magician, dog, text, background and ALL cup strings/lines; only right figure plus her held cup remain.
+Essential correction: REMOVE the dark MAGENTA/RED VERTICAL HAIR REMNANT between her neck and upper yellow collar (just below the short blue hair, at inner collar opening). It is an old long-hair fragment, not a tie or clothing trim. Reconstruct a complete physically coherent neck/shoulder/yellow hoodie collar there using normal skin tone and yellow fabric folds. NO red/magenta strand or triangular red cloth insert at the neckline. The original Rem burgundy hairpin/bow higher on her hair IS legitimate and MUST remain. Do not simply paint a flat rectangle over the neck: redraw the continuous neck and layered collar correctly as part of the WHOLE figure. Keep head, body, cup and fingers in their original positions and proportions, no pose change, no added accessories. Flat hand-drawn PV line art, true alpha transparency, no checkerboard or opaque background. Same16:9 canvas.
+
+
+Derivation
+{"from": "work/revision3/mid/cup_right_registered.png", "to": "work/revision3/mid/cup_right_sprite_raw.png", "evidence": ".git/final-assets-v3.json", "derivation": "register_cup_right.py配准后的最终右侧角色。", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/cup_right_registered.png", "to": "work/revision3/mid/cup_right_sprite_raw.png", "evidence": "work/revision3/mid/register_cup_right.py", "derivation": "统一相似变换配准完整右侧人物", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/mid/cup_right_registered.png",
+  "role": "杯线段右侧完整人物RGBA",
+  "ranges": [
+    [
+      1631,
+      1708
+    ]
+  ],
+  "evidence": "work/revision3/mid/render_mid.py: CupRevision直接加载newright，替换右侧角色；左人物和动物保留V2。",
+  "source_images": [
+    "work/revision3/mid/cup_right_sprite_raw.png"
+  ],
+  "sha256": "f7cf84d7e557fc7714df1d680420f50672fe8a174e9ae85048630dd72654e518",
+  "derivation": "register_cup_right.py配准后的最终右侧角色。"
+}

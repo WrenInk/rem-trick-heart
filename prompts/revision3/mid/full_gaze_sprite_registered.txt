@@ -1,0 +1,38 @@
+Image: assets/revision3/mid/full_gaze_sprite_registered.png
+Role: 看狗段完整重生成人物RGBA
+Production path: work/revision3/mid/full_gaze_sprite_registered.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/mid/full_gaze_prompt.txt $
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Regenerate ONE COMPLETE coherent Rem magician character as true transparent RGBA for this animation shot. This is a FULL-CHARACTER redraw, NOT an eye patch or a face pasted onto old body. Image1 is the ORIGINAL scene for exact full-body pose, placement and interaction with the dog at screen lower-left. Image2 is the established NEW Rem identity/outfit reference. Replace the entire original magician with Rem as one connected newly drawn figure from hat through head/neck/shoulders, torso, both complete arms/hands, shorts, stockings and both boots. Retain the body stance and raised viewer-left gloved hand gesture from image1, lowered viewer-right arm, same scale/location and costume silhouette.
+Crucial acting: Rem is gently LOOKING DOWN TOWARD THE DOG in image1, in the direction of screen LOWER LEFT about60degrees below the leftward horizontal. Her HEAD and chin naturally lower/turn a little toward that dog, neck follows, eyelids relaxed and eye gaze follows the head. This must be a natural attentive glance, not a front-facing wide eye with an iris pasted to its corner. Do not exaggerate into a60degree sideways head tilt; the60degree description is the direction toward the dog. Face may be a softly downward three-quarter view; visible eye not staring at camera, not startled, not bulging. Both eyes/eyelids anatomically coherent; the usual blue fringe may cover one eye.
+Identity must remain Rem: short powder-blue bob, ONE curved white-flower chain and the same crossed X hairclip with small burgundy bow as image2. Keep black-and-white diamond magician top hat with burgundy band and feather, burgundy jacket, white shirt, black bow tie, orange cuffs, white gloves, black shorts, asymmetric black-white stockings and burgundy boots. No added ornaments, no double flower chains. Flat hand-drawn cel PV style, fine black outlines like references.
+Output ONLY this entire new character on a genuinely TRANSPARENT full16:9 canvas. NO dog, NO words or shadows of words, NO burgundy background, NO card frame, NO props besides worn costume. Keep source image1 placement and full-body proportions. Reconstruct every body part together; no original face/hair/neck/body fragments, no cut-off feet. Same visual coordinates as original1280x720 framing, no recentering. The dog is a gaze reference only and must not be included in the PNG.
+
+
+Derivation
+{"from": "work/revision3/mid/full_gaze_sprite_registered.png", "to": "work/revision3/mid/full_gaze_sprite_raw.png", "evidence": ".git/final-assets-v3.json", "derivation": "prepare_full_gaze.py以帽至靴整体范围做统一缩放和平移。", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/full_gaze_sprite_registered.png", "to": "work/revision3/mid/full_gaze_sprite_raw.png", "evidence": "work/revision3/mid/full_gaze_registration.json $", "derivation": "input_raw 经配准、透明层或完整人物提取生成 output", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/mid/full_gaze_sprite_registered.png",
+  "role": "看狗段完整重生成人物RGBA",
+  "ranges": [
+    [
+      1930,
+      2007
+    ]
+  ],
+  "evidence": "work/revision3/mid/render_mid.py: main调用FullDogGaze；DogGaze旧局部眼部方案直接raise而不能采用。",
+  "source_images": [
+    "work/revision3/mid/full_gaze_sprite_raw.png"
+  ],
+  "sha256": "2330e7e6c106e676749fe7657dc17e4e530d07c819bdf1d70354a66de3434094",
+  "derivation": "prepare_full_gaze.py以帽至靴整体范围做统一缩放和平移。"
+}

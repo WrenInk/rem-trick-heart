@@ -1,0 +1,38 @@
+Image: assets/rebuild/early/rem_f0942_v2.png
+Role: actual fabric and fingertip pixel source
+Production path: work/rebuild/early/rem_f0942_v2.png
+Association status: partial
+
+Prompt 1
+Source record: work/rebuild/early/generation_prompts.json $[1]
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+The complete generation prompt was not preserved. Saved intent/constraints:
+{
+  "request": "Closed-eye laughing girl with rabbit moving at chest",
+  "common_constraints": "Replace source character completely with Rem, light blue bob covering one eye, blue eye, flower hair ornament and red cross clips. Preserve source exact expression, pose, clothing, body, hands, props, panel, caption, crop; erase all original red hair and outlines. Full contiguous character to bottom crop, flat handdrawn anime MV, 16:9."
+}
+
+Record notes
+work/rebuild/early/rem_f0942_v2.png: 原文件只有意图/约束摘要，没有完整调用提示词。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/rem_f0942_v2.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f0942"
+  ],
+  "ranges": [
+    [
+      939,
+      948
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=20938"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

@@ -1,0 +1,35 @@
+Image: assets/revision3/late/pose_f2480.png
+Role: 抛球完整人物RGBA
+Production path: work/revision3/late/pose_f2480.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/juggle_sprite_early_prompts.json $[1].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: background-extraction + precise-object-edit. Edit THIS ALREADY-CORRECT REM ART into a complete reusable animation sprite. Actual transparent RGBA background. REMOVE EVERY YELLOW SPHERICAL JUGGLING BALL and all white polka-dot/sparkle/highlight fragments belonging to the balls, including balls overlapping glove fingers, face/hair or hat. There must be ZERO balls or ball fragments in the output. The plain ORANGE/GOLD SLEEVE CUFFS ARE CLOTHING and must stay intact. Keep the whole original Rem figure: patterned top hat and its red band/feathers, blue bob/white flowers/red clips, face/exact eye state and smile, pink-red suit, black bowtie, shorts, both legs as originally cropped, both entire arms and complete white-gloved palms/fingers. Remove frame outline, ivory panel border, background, letters and any independent floating highlights. RECONSTRUCT opaque coherent glove palms/fingers and underlying face/hair/hat/clothing wherever balls had obscured them; never leave ball-shaped transparent holes. Preserve EXACT input hand/finger silhouettes and positions, every bend, elbow and wrist angle; keep naturally cupped empty palms where balls used to be, not fists or new gestures. Do NOT resize, recenter, zoom, rotate or change the pose. Canvas1672x941; girl stays right around x1160–1500. Preserve original silhouette scale, original leg crop ends near y890; do not add legs/feet below the original crop. Empty left stays transparent. Same flat anime PV linework. Pose: both low hands at waist, viewer-left nearx1245,y626, viewer-right nearx1414,y650. Original two spheres left, one right: remove all three. Keep the individual original curled/spread gloved fingers in exact positions. Visible eye OPEN.
+
+Derivation
+{"from": "work/revision3/late/pose_f2480.png", "to": "work/rebuild/root_assets/juggle_registered_f2480.png", "evidence": ".git/final-assets-v3.json", "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/juggle_registered_f2480.png", "to": "work/rebuild/root_assets/juggle_sprite_f2480.png", "evidence": "work/rebuild/root_assets/juggle_sprite_early_registration.json $.assets[1]", "derivation": "sprite_file 经配准、透明层或完整人物提取生成 registered_file", "relationship": "pixel_source"}
+{"from": "work/revision3/late/pose_f2480.png", "to": "work/rebuild/root_assets/juggle_registered_f2480.png", "evidence": "work/revision3/late/export_poses.py + work/rebuild/engine.py:414-446", "derivation": "按pose_export配置别名及引擎覆盖优先级导出的最终人物像素；源帧仅用于几何配准", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/pose_f2480.png",
+  "role": "抛球完整人物RGBA",
+  "ranges": [
+    [
+      2477,
+      2482
+    ]
+  ],
+  "evidence": "work/revision3/late/compose.py: coherent_pose在family==juggle分支立即返回self.layers[tag]，不采用head master或closed替换。",
+  "source_images": [
+    "work/rebuild/root_assets/juggle_registered_f2480.png"
+  ],
+  "sha256": "a5429b6265b237ce1d4124355a74615a17796d0d83460b3aa53c6061798dffa2",
+  "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。"
+}

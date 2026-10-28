@@ -1,0 +1,30 @@
+Image: assets/rebuild/early/sprite_f0942.png
+Role: generated complete RGBA
+Production path: work/rebuild/early/sprite_f0942.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/early/sprite_prompts_exact.json $[1].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: background-extraction and precise-object-edit. The reference is an already-correct Rem animation frame; DO NOT redesign her. Produce one RGBA PNG with ACTUAL TRANSPARENT alpha background. Keep canvas landscape1672x941, keeping all person pixels at EXACT same coordinates, scale and crop as the input: girl remains on right, empty left stays transparent. DO NOT center/enlarge/reframe. Extract the COMPLETE contiguous visible person: entire short blue bob, face, neck, both shoulders, yellow hoodie, grey jacket, both sleeves and all original fingers/hands. Remove ONLY rabbit, all caption/text, and burgundy background. Where the rabbit occludes the person, RECONSTRUCT the person's natural blue hair/skin/yellow fabric underneath, with opaque complete body; never leave a rabbit-shaped transparent hole. Preserve every visible body/hand outline and expression exactly. No rabbit remnants or ghost outlines. Original crop at bottom edge stays as-is; do not draw any new lower body, legs or feet outside original view. No long red hair or red chest strip/strap. Only hair accessory red clips remain. Precise reusable animation sprite, same simple flat anime artwork, clean antialiased alpha, no shadow, no ground.CLOSED eye happy open-mouth smile. Rabbit in front of left cheek/shoulder must be fully removed; rebuild short blue hair left jaw edge, continuous bare neck/left shoulder and yellow hoodie. Both raised hands remain exact.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/sprite_f0942.png",
+  "role": "generated complete RGBA",
+  "tags": [
+    "f0942"
+  ],
+  "ranges": [
+    [
+      939,
+      948
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f0942; load_sprite_override selected"
+  ]
+}

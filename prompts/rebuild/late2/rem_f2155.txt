@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f2155.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/late2/rem_f2155.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f2155
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 source f2155 is EDIT TARGET. Image2 Rem identity only. Replace complete character cropped at extreme RIGHT border with Rem blue short bob, side flowers/clips; face side profile LEFT. Exact f2155 pose: exposed blue eye HALF-LIDDED looking forward, lips slightly pursed, head lower/level compared to earlier blowing pose, blue bangs lift slightly toward left. Preserve source face contour nose chin neck and shoulders geometry/crop, red magician costume white collar black bow top hat. No pink/red hair remnants. Keep source scattered few golden petals far left and wine backdrop, do NOT introduce reference image2 lyric card. Flat cel PV lineart. Keep person clipped by original right/lower edges, no recentering.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f2155.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2155"
+  ],
+  "ranges": [
+    [
+      2155,
+      2157
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2155; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

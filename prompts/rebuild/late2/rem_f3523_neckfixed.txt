@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f3523_neckfixed.png
+Role: actual fabric and fingertip pixel source
+Production path: work/rebuild/late2/rem_f3523_neckfixed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f3523Clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 EDIT TARGET. Tiny edit only: REMOVE narrow RED/MAGENTA dangling strip between Rem's LEFT yellow collar and her raised card-holding hand. This is residual OLD HAIR, not a ribbon/string/strap. Delete complete red strip AND its old black outline, reconstruct continuous pale neck skin and yellow hoodie collar with natural garment folds and grey sleeve where appropriate. No red tie/cord/ribbon on chest. Preserve face half-lidded eye expression, blue hair, all accessories, duck, EXACT card and hand geometry, full hoodie/body and every other pixel of composition, butterflies text wine background unchanged. No resizing/repositioning. Retain 16:9 canvas.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f3523_neckfixed.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f3523"
+  ],
+  "ranges": [
+    [
+      3509,
+      3543
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=14292"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

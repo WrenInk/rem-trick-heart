@@ -1,0 +1,34 @@
+Image: assets/revision3/butterfly/registered_f0637.png
+Role: 蝴蝶段独立人物RGBA
+Production path: work/revision3/butterfly/registered_f0637.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/butterfly/prompts.json $[2].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Precise animation compositing extraction. Edit THIS exact NEW Rem reference, retaining its exact line art, character proportions, expression, pose, costume, hair ornaments, blue hair, skin, neck, hands and outline. Produce only the complete coherent Rem character as real transparent RGBA, at the same original coordinates and scale on a landscape canvas. Remove ALL flying golden butterflies, butterfly-shaped streaks, particles, printed captions, cream card/paper and burgundy background. Reconstruct the small portions of blue hair, face, white glove or clothing that butterflies were covering; these portions must be fully opaque matching adjacent character drawing, with no butterfly-shaped alpha holes or muddy inpainting smears. DO NOT erase any skin or hair because its color resembles an effect. White flowers, purple X hairclip, bow, white gloves and orange cuffs are parts of the character and must remain intact. Keep the held golden wand/rod and little coin if present; they are physical props, not flying butterflies. Do not alter the facial features or invent a new hairstyle. Keep the original cropping of the visible character where a frame/canvas cuts it, and transparent outside the character. No shadows/background/frame/text, no extra characters.
+
+Derivation
+{"from": "work/revision3/butterfly/registered_f0637.png", "to": "work/revision3/butterfly/sprite_f0637.png", "evidence": ".git/final-assets-v3.json", "derivation": "sprite → SIFT/RANSAC相似配准 → registered；原sprite不另归档。", "relationship": "pixel_source"}
+{"from": "work/revision3/butterfly/registered_f0637.png", "to": "work/revision3/butterfly/sprite_f0637.png", "evidence": "work/revision3/butterfly/render.py", "derivation": "实际透明精灵配准并以预乘alpha变换", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/butterfly/registered_f0637.png",
+  "role": "蝴蝶段独立人物RGBA",
+  "ranges": [
+    [
+      635,
+      639
+    ]
+  ],
+  "evidence": "work/revision3/butterfly/render.py: register保存的registered层与返回rgb/alpha一致；Pose随后应用画框和运动矩阵。",
+  "source_images": [
+    "work/revision3/butterfly/sprite_f0637.png"
+  ],
+  "sha256": "33a80b37787c026ef5227d950f97447c1f5685496989bcf9e91aab9160ebf3b1",
+  "derivation": "sprite → SIFT/RANSAC相似配准 → registered；原sprite不另归档。"
+}

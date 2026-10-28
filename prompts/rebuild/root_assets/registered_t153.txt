@@ -1,0 +1,36 @@
+Image: assets/rebuild/root_assets/registered_t153.png
+Role: final registered complete RGBA
+Production path: work/rebuild/root_assets/registered_t153.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/final_sprite_prompts.json $.t153
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Extract ONLY the complete Rem character from this exact scene as a genuine transparent RGBA animation layer. Preserve exact framing, size, pose, the blue short bob, white flowers, X hair clip, closed-eye toothy smile, yellow high-collar jacket, outstretched BOTH arms and fingers, orange shorts, visible thighs and gray shoulder bag. REMOVE all three animals (white rabbit at left, duck at right, dog and bone at bottom right), butterflies, Japanese letters and burgundy background. Reconstruct full continuous jacket, hand, shorts/leg area wherever those removed objects overlap, no animal-shaped holes. Keep composition fixed, do not shrink or enlarge or recenter the character. Bottom frame stays cropped at original view. Real alpha transparency. Do not repaint or damage collar; retain clean linework.
+
+Derivation
+{"from": "work/rebuild/root_assets/registered_t153.png", "to": "work/rebuild/root_assets/sprite_t153.png", "evidence": ".git/final-assets-v2.json", "derivation": "registered by work/rebuild/root_assets/final_sprite_registration.json", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/registered_t153.png", "to": "work/rebuild/root_assets/sprite_t153.png", "evidence": "work/rebuild/root_assets/final_sprite_registration.json", "derivation": "同 tag 的透明精灵按已保存矩阵配准；与 engine.py final_sprite 分支一致", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/root_assets/registered_t153.png",
+  "role": "final registered complete RGBA",
+  "tags": [
+    "t153"
+  ],
+  "ranges": [
+    [
+      3666,
+      3698
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t153; registered_TAG override wins"
+  ],
+  "source_image": "work/rebuild/root_assets/sprite_t153.png",
+  "derivation": "registered by work/rebuild/root_assets/final_sprite_registration.json"
+}

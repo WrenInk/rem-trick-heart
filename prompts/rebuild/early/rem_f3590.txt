@@ -1,0 +1,31 @@
+Image: assets/rebuild/early/rem_f3590.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/early/rem_f3590.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/early/f3590_prompt.json $.prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. This exact1280x720 animation frame shows a SMALL horizontal ivory panel in center, x385–916,y216–527. Inside it, the crimson/red coiled spiral mass grabbed by the bare hand is the OLD CHARACTER'S HAIR, NOT clothing or a prop. Replace all this old red hair completely with a coherent close-up slice of Rem from Re:Zero's SHORT LIGHT-BLUE STRAIGHT BOB SIDE HAIR, with recognizable small WHITE FLOWER hair accessory and red crossed clip. No red hair and no long blue spiral/drill curls. The hand should now naturally pinch/touch the side blue hair near the white flower. Keep the source bare hand EXACT finger gesture, wrist, elbow, yellow sleeve and yellow jacket shapes. Draw the COMPLETE contiguous visible character fragment within the small panel: blue side bob, appropriate visible skin/neck, touching hand, sleeve and coat. The character's face is cropped OFFSCREEN in this composition: do NOT invent a full face or widen the shot. Preserve the panel's exact bounds, black outline and ivory background. Preserve the original outer burgundy background, both Japanese caption cards and their words/positions and all butterflies exactly. Do NOT zoom, center or enlarge the panel. Keep source flat handdrawn anime-PV black-line style and16:9 canvas. Remove all old red spiral hair down to its lowest pointed tip and behind hand; reconstruct whatever ivory/skin/yellow fabric is revealed. Final image is full frame, no extra text.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/rem_f3590.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f3590"
+  ],
+  "ranges": [
+    [
+      3584,
+      3630
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3590; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

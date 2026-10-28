@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/sofa_pair_clean.png
+Role: sofa complete character RGBA
+Production path: work/rebuild/late2/sofa_pair_clean.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.pairClean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Transparent EDIT TARGET Image1. CRITICAL small cleanup only: on the RIGHT blue-haired Rem girl, DELETE the two RED dangling long hair strands running down from her neck over the yellow neckline and yellow shirt. They are residual OLD HAIR, NOT ribbons, NOT drawstrings, NOT clothing. Reconstruct continuous bare neck skin and yellow hoodie/collar/shirt underneath those red strands, restore neckline and shirt logo naturally. No red straps/ties/cords remain on the right girl's neck or chest. Preserve everything else EXACTLY: BOTH characters' full geometry, all blue hair and flowers, faces, poses, outfits, gloves hands legs shoes, entire LEFT magician RED JACKET and hat band. Same full 1672x941 transparent canvas and pixel positions. Do not rescale/recenter/crop. Preserve TRUE alpha transparency. Change only residual red hair in right character's neck and chest.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/sofa_pair_clean.png",
+  "role": "sofa complete character RGBA",
+  "tags": [
+    "t120"
+  ],
+  "ranges": [
+    [
+      2785,
+      2939
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t120; sofa branch replaces initial edit"
+  ],
+  "derivation": "alpha-bbox crop and resize"
+}

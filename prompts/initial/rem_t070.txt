@@ -1,0 +1,33 @@
+Image: assets/initial/rem_t070.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t070.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[7].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Asset type: 1280x720 hand-drawn Japanese music video replacement keyframe. Input image 1 is the edit target. Change ONLY the red-haired anime human girl to Rem from Re:Zero. Rem has pale sky-blue chin-length short bob hair, straight side-swept bangs completely covering her own right eye (the viewer's left), one visible BLUE eye, a small white flower accessory and black hair clips. Adapt Rem to the exact very simple flat-color hand-drawn black-line style of this image; keep the original human body pose, expression, outfit and crop. Remove ALL original long dark red hair and red spiral twin-tail hair, reconstruct the original solid background in the vacated hair areas. Preserve original pink heart cheek mark if present. Keep every nonhuman element, background, Japanese lettering, butterflies, borders, props, position and colors unchanged. No new objects, no maid uniform, no gradient, no photorealism. Keep the original 16:9 1280x720 composition precisely. There are TWO HUMAN GIRLS: one magician on the left, one casual girl on the right. Replace BOTH girls with Rem's short blue bob and eye/flower/clip identity. Keep the magician's exact tiny black top hat with white bunny ear decorations, red blazer, bow tie, black shorts, striped socks, red shoes, gloves and cup; Rem's short blue hair is beneath the existing hat. Right Rem keeps gray jacket, yellow shirt, bare legs, large yellow/gray boots and yellow cup. Preserve ALL poses, head sizes, strings, dog in center, and yellow Japanese lyrics. Dog is unchanged. Remove old red spiral twin-tails on left and old long red hair on right, restore solid maroon background there. Input image 2 is character identity reference only, use blue bob color, accessory arrangement and linework but do NOT copy scene, pose, outfit or expression.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t070.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t070"
+  ],
+  "ranges": [
+    [
+      1631,
+      1708
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t070; no later sprite override",
+    "work/revision3/mid/render_mid.py CupRevision retains V2 left actor"
+  ],
+  "derivation": "character ROI extraction and motion registration",
+  "visible_region": "left actor and cup/hand only; right actor replaced in V3"
+}

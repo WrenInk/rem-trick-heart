@@ -1,0 +1,33 @@
+Image: assets/rebuild/audit/rem_f1115_v2.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/audit/rem_f1115_v2.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/audit/image_refine_prompt.txt $
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Precise animation expression edit. Image 1 is edit target: the already generated Rem full frame. Image 2 is original-frame expression reference ONLY. Make ONE localized correction to image 1: the visible blue eye must be gently HALF-LIDDED with the upper eyelid lowered to cover approximately the upper half of the blue iris, matching the softly curved half-open smiling eye in original image 2. It must look warmly relaxed, not wide round surprised, and not fully closed. Keep the blue lower half of iris visible. Keep the closed-mouth curved smile, entire bob hair outline, accessories, head/shoulder pose, neck, yellow hoodie, gray jacket, burgundy panel, cream frame, all linework and composition EXACTLY as image 1. Do not add teeth, change tilt, enlarge eye, or redraw body. Preserve full 16:9 output.
+
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/audit/rem_f1115_v2.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f1115"
+  ],
+  "ranges": [
+    [
+      1113,
+      1118
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1115; no later sprite override",
+    "work/revision3/early/render_repairs.py repair_turn: else out=current(f), V2 passthrough"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f2145.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/late2/rem_f2145.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f2145
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 is source f2145 EDIT TARGET, Image2 Rem identity reference ONLY. Replace complete cropped profile character on extreme RIGHT edge with Rem, short sky-blue bob with white flowers/cross clips, visible side eye vivid blue. EXACT pose image1: facing LEFT, chin slightly raised and mouth open as blowing, eye wide OPEN, front blue hair tips lift/stream left with motion. Keep hat, neck, shoulders, red magician coat, white collar, black bow crop precisely as source. Entire head neck body must be coherent, no old red hair left. Do not move character inward or enlarge visible region; maintain original right-edge cutoff and huge empty left side. Keep lyric card and wine background as image1. Flat original PV style, all camera geometry locked.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f2145.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2145"
+  ],
+  "ranges": [
+    [
+      2143,
+      2147
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2145; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

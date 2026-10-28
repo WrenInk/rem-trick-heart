@@ -1,0 +1,36 @@
+Image: assets/rebuild/audit/gap_sprite_3308.png
+Role: preplaced complete RGBA
+Production path: work/rebuild/audit/gap_sprite_3308.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/additional_prompts.json $.prompts.sprite3323
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: background-extraction. Image1 EDIT TARGET, finished Rem PV keyframe. Extract COMPLETE visible Rem character into true transparent PNG: full short blue bob natural crown, white flowers/clips face neck grey shoulders yellow shirt all source-visible body until ORIGINAL bottom/right canvas crop. REMOVE the white duck from top of head, reconstruct natural complete rounded BLUE HAIR crown underneath; no transparent duck-shaped hole. Remove ALL butterflies, text, wine background. No red old hair strand/cord/tie at neck/chest, continuous yellow neckline. Preserve exact CLOSED eye and bowed tilted head, same source character proportions/pose/pixel placement and ORIGINAL 1672x941 landscape canvas; do not recenter or scale. No new body beyond original crop. All outside person must be genuine alpha transparent. Do not change facial expression.
+
+Derivation
+{"from": "work/rebuild/audit/gap_sprite_3308.png", "to": "work/rebuild/late2/sprite_f3323.png", "evidence": ".git/final-assets-v2.json", "derivation": "work/rebuild/audit/build_additions.py: resize complete sprite to1280x720, affine transform and clip to panel; no new generation", "relationship": "pixel_source"}
+{"from": "work/rebuild/audit/gap_sprite_3308.png", "to": "work/rebuild/late2/sprite_f3323.png", "evidence": "work/rebuild/audit/build_additions.py:15-27", "derivation": "明确读取sprite_f3323，缩为1280×720，再按timeline_additions的矩阵和框内clip裁剪；无新生图调用", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/audit/gap_sprite_3308.png",
+  "role": "preplaced complete RGBA",
+  "tags": [
+    "f3308"
+  ],
+  "ranges": [
+    [
+      3305,
+      3321
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3308; preplaced_sprite final override"
+  ],
+  "source_image": "work/rebuild/late2/sprite_f3323.png",
+  "derivation": "work/rebuild/audit/build_additions.py: resize complete sprite to1280x720, affine transform and clip to panel; no new generation"
+}

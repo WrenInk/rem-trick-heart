@@ -1,0 +1,41 @@
+Image: assets/rebuild/plates/native_frame_rgba.png
+Role: extracted original empty frame foreground
+Production path: work/rebuild/plates/native_frame_rgba.png
+Association status: programmatic_or_source_layer
+
+No independently recorded generation prompt applies to this image. See the derivation or missing-record note below.
+
+Record notes
+work/rebuild/plates/native_frame_rgba.png: 原PV画框图层，按最终代码恢复边框；不是生图素材。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/plates/native_frame_rgba.png",
+  "role": "extracted original empty frame foreground",
+  "tags": [
+    "native_frame"
+  ],
+  "ranges": [
+    [
+      1095,
+      1099
+    ],
+    [
+      1103,
+      1108
+    ],
+    [
+      1113,
+      1208
+    ],
+    [
+      1209,
+      1281
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/special_foreground.py get_layers / _native_frame"
+  ],
+  "derivation": "source-video extracted layer, no generation prompt"
+}

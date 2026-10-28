@@ -1,0 +1,34 @@
+Image: assets/revision3/early/layers/hair_registered_1025.png
+Role: 兔子段新头发RGBA
+Production path: work/revision3/early/layers/hair_registered_1025.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/early/generation_prompts.json $[3].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: background-extraction and precise-object-edit. Image1 is existing Rem PV artwork. Produce a genuine transparent RGBA animation layer containing ONLY the already-visible cropped BLUE HAIR CROWN at the lower right, including its two white side flowers, short connecting petal chain, dark-red X clip and dark-red bow with white ribbon tails. Preserve the original hair silhouette, scale, coordinates, exact clip/flower arrangement and crop. REMOVE the entire rabbit (all white body, paws, both red/white ears), all caption, wand, white glove/hand, clothing at bottom-left and burgundy background. Reconstruct natural coherent BLUE HAIR underneath every former rabbit-occluded region: no rabbit-shaped transparent hole, no leftover rabbit outline. Do NOT make the whole face visible: the source only shows a cropped scalp/hair crown and tiny edge at frame bottom, keep that original crop; do not draw torso, eyes or new head proportions. Transparent canvas1672x941, hair stays around x775–1600,y~480–941; do not center/enlarge. All empty space truly transparent. Image2 is supporting accessory identity reference only: same side two-white-flower chain + dark X and bow, NOT a full top-of-head flower wreath.
+
+Derivation
+{"from": "work/revision3/early/layers/hair_registered_1025.png", "to": "work/revision3/early/hair_f1025.png", "evidence": ".git/final-assets-v3.json", "derivation": "完整新头发sprite配准到1280×720；不包含原兔子RGB。", "relationship": "pixel_source"}
+{"from": "work/revision3/early/layers/hair_registered_1025.png", "to": "work/revision3/early/hair_f1025.png", "evidence": "work/revision3/early/render_repairs.py", "derivation": "完整头顶透明层配准，随后保留原兔子在前景", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/early/layers/hair_registered_1025.png",
+  "role": "兔子段新头发RGBA",
+  "ranges": [
+    [
+      982,
+      1036
+    ]
+  ],
+  "evidence": "work/revision3/early/render_repairs.py: repair_rabbit写出并使用同一base_rgb/base_alpha逐帧运动；兔子从源视频分割覆盖。",
+  "source_images": [
+    "work/revision3/early/hair_f1025.png"
+  ],
+  "sha256": "7d93df95a8ffcb85051f1bcbb9b320c06132fa7efbeb61ede5b0ebc620dafd57",
+  "derivation": "完整新头发sprite配准到1280×720；不包含原兔子RGB。"
+}

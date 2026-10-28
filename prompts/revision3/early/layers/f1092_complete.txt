@@ -1,0 +1,35 @@
+Image: assets/revision3/early/layers/f1092_complete.png
+Role: 统一头饰完整人物RGBA
+Production path: work/revision3/early/layers/f1092_complete.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/early/generation_prompts.json $[0].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. Image1 is the exact rear-view Rem PV frame to fix. Image2 is the authoritative accessory identity reference. Change ONLY Image1 little hair accessory at the viewer-left edge of her BACK-VIEW bob. The current THREE-flower crown/ladder is wrong. It must be the SAME single narrow side ornament as Image2: exactly TWO prominent white four-petal flowers linked with small oval petals, dark wine-red side bow, two slim white tails, and wine-red X fringe clip. Because Image1 is a rear/left-profile view, naturally project and OCCLUDE the same temple ornament around the left visible head rim: the far/front portions of X and bow can be hidden by hair. It is fine to show one flower partly hidden, but NEVER make a new crown across the top of the head or add a third flower. Do not put a big X on the back center of head. Keep her exact rear head direction, bob shape, facial sliver, head size/location and entire body/grey jacket/yellow hood/hands/legs/yellow boots completely unchanged. No rotation to front, no enlarging. Preserve frame, crop and background. Output full same1672x941 canvas.
+
+Derivation
+{"from": "work/revision3/early/layers/f1092_complete.png", "to": "work/revision3/early/rem_f1092_accessory.png", "evidence": ".git/final-assets-v3.json", "derivation": "完整新角色图 → engine.Pose抠取人物 → complete；原生成图不另归档。", "relationship": "pixel_source"}
+{"from": "work/revision3/early/layers/f1092_complete.png", "to": "work/revision3/early/rem_f1092_accessory.png", "evidence": "work/revision3/early/turn_registration.json $[0]", "derivation": "new_asset 经配准、透明层或完整人物提取生成 new_person_rgba", "relationship": "pixel_source"}
+{"from": "work/revision3/early/layers/f1092_complete.png", "to": "work/revision3/early/rem_f1092_accessory.png", "evidence": "work/revision3/early/render_repairs.py", "derivation": "从配饰修正后的完整 NEW 人物提取RGBA层", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/early/layers/f1092_complete.png",
+  "role": "统一头饰完整人物RGBA",
+  "ranges": [
+    [
+      1091,
+      1095
+    ]
+  ],
+  "evidence": "work/revision3/early/render_repairs.py: repair_turn取pose.sprites[0]导出complete层；engine对应tag无更高优先registered/preplaced覆盖。",
+  "source_images": [
+    "work/revision3/early/rem_f1092_accessory.png"
+  ],
+  "sha256": "416fa01f8dea669bc8188561d406a87ba66063c55ac8484ef5843304ffec75dd",
+  "derivation": "完整新角色图 → engine.Pose抠取人物 → complete；原生成图不另归档。"
+}

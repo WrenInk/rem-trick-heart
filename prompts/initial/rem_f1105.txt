@@ -1,0 +1,32 @@
+Image: assets/initial/rem_f1105.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f1105.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[15].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Asset type: 1280x720 hand-drawn Japanese music video replacement keyframe. Input image 1 is the edit target. Change ONLY the red-haired anime human girl to Rem from Re:Zero. Rem has pale sky-blue chin-length short bob hair, straight side-swept bangs completely covering her own right eye (the viewer's left), one visible BLUE eye, a small white flower accessory and black hair clips. Adapt Rem to the exact very simple flat-color hand-drawn black-line style of this image; keep the original human body pose, expression, outfit and crop. Remove ALL original long dark red hair and red spiral twin-tail hair, reconstruct the original solid background in the vacated hair areas. Preserve original pink heart cheek mark if present. Keep every nonhuman element, background, Japanese lettering, butterflies, borders, props, position and colors unchanged. No new objects, no maid uniform, no gradient, no photorealism. Keep the original 16:9 1280x720 composition precisely. There is ONE girl, on the right side INSIDE a horizontal black frame with cream margin. Keep her exact head tilt, smiling open pink mouth and half-open cheerful eye expression (do NOT close the visible eye), yellow shirt and gray jacket. Replace long red hair with short blue Rem bob and cover viewer-left eye with bangs; visible viewer-right iris blue. Preserve maroon empty left side and exact black frame and cream edge. Input image 2 is a CHARACTER IDENTITY reference only. Copy blue short hair and hair accessory style, do NOT copy its face pose, scene or clothing.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f1105.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f1105"
+  ],
+  "ranges": [
+    [
+      1103,
+      1108
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1105; no later sprite override",
+    "work/revision3/early/render_repairs.py repair_turn: else out=current(f), V2 passthrough"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,39 @@
+Image: assets/initial/rem_t035.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t035.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[1].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Asset type: 1280x720 hand-drawn Japanese music video replacement keyframe. Input image 1 is the edit target. Change ONLY the red-haired anime human girl to Rem from Re:Zero. Rem has pale sky-blue chin-length short bob hair, straight side-swept bangs completely covering her own right eye (the viewer's left), one visible BLUE eye, a small white flower accessory and black hair clips. Adapt Rem to the exact very simple flat-color hand-drawn black-line style of this image; keep the original human body pose, expression, outfit and crop. Remove ALL original long dark red hair and red spiral twin-tail hair, reconstruct the original solid background in the vacated hair areas. Preserve original pink heart cheek mark if present. Keep every nonhuman element, background, Japanese lettering, butterflies, borders, props, position and colors unchanged. No new objects, no maid uniform, no gradient, no photorealism. Keep the original 16:9 1280x720 composition precisely. The girl is shown FROM BEHIND, facing away, with no visible face or eyes. Change shoulder-length red hair to a short pale blue Rem bob ending near the nape, with a small flower hairpin visible at one side. Keep the EXACT gray oversized hoodie, bare legs, body position and yellow vertical Japanese lyrics at right. Reconstruct maroon background exposed by shortening hair.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t035.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t035"
+  ],
+  "ranges": [
+    [
+      790,
+      796
+    ],
+    [
+      814,
+      820
+    ],
+    [
+      838,
+      844
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t035; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

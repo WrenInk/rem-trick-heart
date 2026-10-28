@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f3420_neckfixed.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/late2/rem_f3420_neckfixed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/additional_prompts.json $.prompts.f3420Clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 EDIT TARGET. Only remove leftover red/magenta hair strands crossing Rem's yellow chest neckline INSIDE the narrow vertical ivory portrait frame. Main red strand is on viewer-left yellow shoulder/collar; tiny red remnant at far right near collar also remove. These strips are residual OLD HAIR, not ribbons, hoodie cords, or clothing straps. Delete red fills and old black hair contours, rebuild continuous yellow shirt neckline/collar with natural pale neck and original flat PV linework. Keep blue short hair, expression, eye, exact head neck shoulders pose, exact portrait frame location/size/border, all butterflies and Japanese text and burgundy background unchanged. No resizing/recentering; full canvas identical. Small cleanup only.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f3420_neckfixed.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f3420"
+  ],
+  "ranges": [
+    [
+      3417,
+      3438
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3420; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f2152.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/late2/rem_f2152.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f2152
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 source f2152 EDIT TARGET, image2 identity only. Entire extreme RIGHT cropped magician replaced by Rem. Short sky-blue bob, floral headpiece/clips, vivid blue side eye. EXACT original f2152 geometry: faces LEFT, eye fully OPEN again, chin near level, lips pursed blowing, small front hair tufts lifted left. Full hat head neck shoulders red magician coat white collar black bow keep original camera/position/size/crop; right side and lower torso clipped by canvas as source. No red hair left behind. Preserve source yellow floating torn-paper/petal swirl and wine backdrop exactly. No added lyric card (image2 card is identity reference only). Flat PV handdrawn appearance. Do not shift person toward center or invent full uncropped face.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f2152.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2152"
+  ],
+  "ranges": [
+    [
+      2151,
+      2155
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2152; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

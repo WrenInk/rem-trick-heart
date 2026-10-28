@@ -1,0 +1,35 @@
+Image: assets/rebuild/late2/rem_f3336_neckfixed.png
+Role: actual fabric and fingertip pixel source
+Production path: work/rebuild/late2/rem_f3336_neckfixed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f3336Clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 EDIT TARGET. Remove ONLY leftover old red hair strand crossing from neck over yellow left collar/chest. Delete entire magenta strip and its black boundary lines. Reconstruct continuous simple yellow collar and shirt folds, no red straps/ribbons/ties/drawstrings. Fix residual burgundy hair at nape as needed into anatomically clean neck/short blue hair/background. Keep WIDE OPEN blue eye, exact head angle face position, blue bob flowers clips, duck, full grey hoodie/shoulders/body pose, butterflies text and wine backdrop untouched. Same 16:9 size/crop coordinates. Small region edit only, never redraw face or reposition.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f3336_neckfixed.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f3336"
+  ],
+  "ranges": [
+    [
+      3335,
+      3342
+    ],
+    [
+      3349,
+      3356
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=10806"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

@@ -1,0 +1,35 @@
+Image: assets/revision3/flower/master_rgba.png
+Role: 花朵段统一头颈肩与扩展躯干RGBA
+Production path: work/revision3/flower/master_rgba.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/flower/expanded_canvas_prompt.txt $
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Fill the missing bottom of this ALREADY EXPANDED transparent animation canvas. The visible character is abruptly cut off along a horizontal line about 75% down the image. Draw the continuation of the SAME magenta coat, white shirt and lower torso all the way through the empty lower-right quarter down to the BOTTOM EDGE. Do not leave any horizontal cutoff, detached strip, black/transparent gap, or missing right-side coat. Keep the upper head/neck/bow exactly as drawn and in exactly the same location; do not rescale, shrink or move the figure. Preserve the CURRENT taller canvas aspect ratio (1672x1250), leave the left empty area transparent, and keep a genuine transparent background. This is torso outpainting only, no added hands/arms, no text or effects.
+
+
+Derivation
+{"from": "work/revision3/flower/master_rgba.png", "to": "work/revision3/flower/torso_overscan_v2.png", "evidence": ".git/final-assets-v3.json", "derivation": "扩画布新躯干配准为高度900的master；闭眼帧仅眼部区域被blink替代。", "relationship": "pixel_source"}
+{"from": "work/revision3/flower/master_rgba.png", "to": "work/revision3/flower/torso_overscan_v2.png", "evidence": "work/revision3/flower/render.py", "derivation": "最终采用扩边v2，配准形成900px高完整人物主层", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/flower/master_rgba.png",
+  "role": "花朵段统一头颈肩与扩展躯干RGBA",
+  "ranges": [
+    [
+      2197,
+      2235
+    ]
+  ],
+  "evidence": "work/revision3/flower/render.py: torso_overscan_v2存在，优先于flower_torso_gen；master_rgba是self.open同一rgb/alpha持久化。",
+  "source_images": [
+    "work/revision3/flower/torso_overscan_v2.png"
+  ],
+  "sha256": "74cf279b5b99534564c1814a8e3c89f6f5107a5f5d30119c62bb2933e36214a6",
+  "derivation": "扩画布新躯干配准为高度900的master；闭眼帧仅眼部区域被blink替代。"
+}

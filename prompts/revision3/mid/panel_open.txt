@@ -1,0 +1,42 @@
+Image: assets/revision3/mid/panel_open.png
+Role: 双框角色开眼基准
+Production path: work/revision3/mid/panel_open.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[9].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit this source PV frame: BOTH girls in the TWO vertical ivory portrait panels facing each other in profile: magician left looking right, gray/yellow hoodie right looking left. Replace both with Rem's light sky-blue short bob. Maintain profile direction and original face angle, mouth, pose, original clothing and magician top hat. Fringe covering own right eye must remain consistent; the visible eye blue. Keep flower crossed clips, remove all red drills/long red hair, use ivory where hair removed, keep panel outlines and Japanese lyric below. Match the original simple flat-color hand-drawn cartoon anime style, same line weight. Preserve all other source objects, text, clothes, layout and aspect ratio. No new objects or words. Output same landscape 1280x720 composition.
+
+Derivation
+{"from": "work/revision3/mid/panel_open.png", "to": "work/assets/rem_f1752.png", "evidence": ".git/final-assets-v3.json", "derivation": "prepare_assets.py把原完整双框NEW图缩到1280×720。", "relationship": "pixel_source"}
+{"from": "work/revision3/mid/panel_open.png", "to": "work/assets/rem_f1752.png", "evidence": "work/revision3/mid/prepare_assets.py", "derivation": "完整原关键帧缩至1280×720", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/mid/panel_open.png",
+  "role": "双框角色开眼基准",
+  "ranges": [
+    [
+      1708,
+      1726
+    ],
+    [
+      1732,
+      1766
+    ],
+    [
+      1772,
+      1776
+    ]
+  ],
+  "evidence": "work/revision3/mid/render_mid.py: FixedPanels状态open；1749之前只使用左框，之后使用双框。",
+  "source_images": [
+    "work/assets/rem_f1752.png"
+  ],
+  "sha256": "0a3f5137cef381b4a8c35782e36aee59b8ff7ed3d9a47d4f21ba0c96eadb0b7d",
+  "derivation": "prepare_assets.py把原完整双框NEW图缩到1280×720。"
+}

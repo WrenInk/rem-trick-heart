@@ -1,0 +1,47 @@
+Image: assets/revision3/late/pose_f2652.png
+Role: 抛球完整人物RGBA
+Production path: work/revision3/late/pose_f2652.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/juggle_sprite_late_prompts.json $.prompts.f2533
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: background-extraction. Image1 is EDIT TARGET, an already finished Rem magician PV pose. Produce TRUE transparent RGBA containing the COMPLETE visible Rem: hat, blue bob/white flowers/cross clips, face neck bow white shirt red jacket yellow-orange cuffs, BOTH complete white gloves and ALL fingers, black shorts and legs down to the SAME frame-bottom crop. Remove ALL THREE GOLDEN JUGGLING BALLS and their polkadot highlights; reconstruct uninterrupted fingers/palms/body/face behind balls, leave NO circular transparent holes. Exact pose remains: viewer-left palm forward raised near chest, viewer-right palm lower facing forward, same fingers/wrists/arms geometry. Keep orange cuffs. Remove ivory frame, wine backdrop, all text. Same full 1672x941 canvas, exact existing character scale and position; no recentering/resizing, no invention of unseen lower body. Only Rem on transparent background. Do not add any ball, orb, dot, sparkle.
+
+Derivation
+{"from": "work/revision3/late/pose_f2652.png", "to": "work/rebuild/root_assets/juggle_registered_f2533.png", "evidence": ".git/final-assets-v3.json", "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/juggle_registered_f2533.png", "to": "work/rebuild/root_assets/juggle_sprite_f2533.png", "evidence": "work/rebuild/root_assets/juggle_sprite_late_registration.json $.f2533", "derivation": "raw 经配准、透明层或完整人物提取生成 registered", "relationship": "pixel_source"}
+{"from": "work/revision3/late/pose_f2652.png", "to": "work/rebuild/root_assets/juggle_registered_f2533.png", "evidence": "work/revision3/late/export_poses.py + work/rebuild/engine.py:414-446", "derivation": "按pose_export配置别名及引擎覆盖优先级导出的最终人物像素；源帧仅用于几何配准", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/pose_f2652.png",
+  "role": "抛球完整人物RGBA",
+  "ranges": [
+    [
+      2628,
+      2632
+    ],
+    [
+      2652,
+      2656
+    ],
+    [
+      2676,
+      2680
+    ],
+    [
+      2700,
+      2702
+    ]
+  ],
+  "evidence": "work/revision3/late/compose.py: coherent_pose在family==juggle分支立即返回self.layers[tag]，不采用head master或closed替换。",
+  "source_images": [
+    "work/rebuild/root_assets/juggle_registered_f2533.png"
+  ],
+  "sha256": "14c6de69c24bc12e863f1b85f3c34c5bbf1333eb53ed57be0fac832ad572a1e0",
+  "derivation": "export_poses.py导出engine最终人物layer；alias经sprite_registration与服装配准后已烘焙到该pose。"
+}

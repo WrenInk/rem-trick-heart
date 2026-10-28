@@ -1,0 +1,35 @@
+Image: assets/initial/rem_t050.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t050.png
+Association status: partial
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[3]
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+The complete generation prompt was not preserved. Saved intent/constraints:
+{}
+
+Record notes
+work/assets/rem_t050.png: 原提示词文件只有编号、没有正文。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t050.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t050"
+  ],
+  "ranges": [
+    [
+      1174,
+      1208
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t050; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

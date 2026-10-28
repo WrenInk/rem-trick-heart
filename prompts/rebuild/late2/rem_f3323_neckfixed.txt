@@ -1,0 +1,31 @@
+Image: assets/rebuild/late2/rem_f3323_neckfixed.png
+Role: actual fabric and fingertip pixel source
+Production path: work/rebuild/late2/rem_f3323_neckfixed.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/late2/prompts.json $.prompts.f3323Clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image1 EDIT TARGET. Precise tiny edit only: remove the long MAGENTA/RED old hair strand from beneath Rem's blue bob down across the yellow collar and chest, including all of the old strand's black outline. It is OLD HAIR not a strap, not ribbon, not hood string. Reconstruct a simple uninterrupted yellow shirt and collar underneath. Remove the small residual burgundy old hair chunk at nape between blue bob and neck; reconstruct blue short hair edge / normal neck / background as anatomically appropriate. Preserve Rem face, CLOSED eye, head tilt, entire body/camera size, grey hoodie, white duck, butterflies, text and burgundy backdrop otherwise exactly. No red strips on neck or chest. Blue hair accessories stay. 16:9 same canvas no shifting.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/late2/rem_f3323_neckfixed.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f3323"
+  ],
+  "ranges": [
+    [
+      3321,
+      3328
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=6525"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

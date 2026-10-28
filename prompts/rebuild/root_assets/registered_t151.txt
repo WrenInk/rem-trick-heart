@@ -1,0 +1,36 @@
+Image: assets/rebuild/root_assets/registered_t151.png
+Role: final registered complete RGBA
+Production path: work/rebuild/root_assets/registered_t151.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/final_sprite_prompts.json $.t151
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Extract ONLY the complete blue-haired Rem character from this exact reference image into a genuine transparent RGBA animation layer. Preserve the precise composition, position, size, walking-away pose, short blue bob, hair flowers, yellow coat, black tights, boots, shoulder bag and blue card tag, matching linework. Remove EVERY Japanese text glyph, letter shadow, butterfly and burgundy background. Reconstruct uninterrupted coat, arms and bag hidden behind the caption. No caption-shaped holes. Do not change pose or reframe or enlarge the figure. Keep all boots entirely visible. Output landscape same framing, actual transparency.
+
+Derivation
+{"from": "work/rebuild/root_assets/registered_t151.png", "to": "work/rebuild/root_assets/sprite_t151.png", "evidence": ".git/final-assets-v2.json", "derivation": "registered by work/rebuild/root_assets/final_sprite_registration.json", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/registered_t151.png", "to": "work/rebuild/root_assets/sprite_t151.png", "evidence": "work/rebuild/root_assets/final_sprite_registration.json", "derivation": "同 tag 的透明精灵按已保存矩阵配准；与 engine.py final_sprite 分支一致", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/root_assets/registered_t151.png",
+  "role": "final registered complete RGBA",
+  "tags": [
+    "t151"
+  ],
+  "ranges": [
+    [
+      3630,
+      3666
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t151; registered_TAG override wins"
+  ],
+  "source_image": "work/rebuild/root_assets/sprite_t151.png",
+  "derivation": "registered by work/rebuild/root_assets/final_sprite_registration.json"
+}

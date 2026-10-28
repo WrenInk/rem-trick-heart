@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f1231.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f1231.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/mid_prompts.json $[11].prompt
+Association: manifest_link
+Evidence: 同组素材清单以编号关联当前文件；文件可能经过后续覆盖，不保证保留本次调用的原始输出
+
+Use case: precise-object-edit. Asset type: 1280x720 hand-drawn Japanese music video replacement keyframe. Input image 1 is the edit target. Change ONLY the red-haired anime human girl to Rem from Re:Zero. Rem has pale sky-blue chin-length short bob hair, straight side-swept bangs completely covering her own right eye (the viewer's left), one visible BLUE eye, a small white flower accessory and black hair clips. Adapt Rem to the exact very simple flat-color hand-drawn black-line style of this image; keep the original human body pose, expression, outfit and crop. Remove ALL original long dark red hair and red spiral twin-tail hair, reconstruct the original solid background in the vacated hair areas. Preserve original pink heart cheek mark if present. Keep every nonhuman element, background, Japanese lettering, butterflies, borders, props, position and colors unchanged. No new objects, no maid uniform, no gradient, no photorealism. Keep the original 16:9 1280x720 composition precisely. Magician girl stands with right hand on hip, same red blazer/orange cuffs/white shirt/black bow, and existing tilted black top hat on crown. Keep her gentle slight smile and partially open eyes; visible Rem eye is blue and viewer-left eye covered by short blue bangs. Remove red spiral twin-tails, keep body size/location, cream outer margin, black rectangular border and maroon background. Input image 2 is CHARACTER IDENTITY reference only, copy blue bob color, flower/clip style and linework but do not copy its pose or scene.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f1231.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f1231"
+  ],
+  "ranges": [
+    [
+      1224,
+      1233
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f1231; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

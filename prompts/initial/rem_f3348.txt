@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f3348.png
+Role: actual fabric and fingertip pixel source
+Production path: work/assets/rem_f3348.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/late_expression_prompts.json $.f3348
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Asset type: 1280x720 anime music-video replacement keyframe. Input image 1 is the edit target. Edit only the human character's head and hairstyle into Rem from Re:Zero: pale sky-blue short bob ending at jaw/neck; long side-swept bangs hide her own right eye (viewer LEFT); visible left eye vivid blue; little white flower hair ornament and two black hair clips on viewer RIGHT. Remove all old magenta/red long hair and giant spiral pigtails completely, restore the exact flat background formerly hidden there. Retain the original simple hand-drawn black outlines and flat cel colors, no extra rendering or shading. Keep original face position, expression, body, red magician suit or grey hoodie, hands, props, scenery, text and camera crop pixel-aligned and unchanged. Only hair and eyes need replacement, not costumes. Do not introduce a maid dress, new text or decoration. Landscape 16:9 1280x720. Gray hoodie girl wearing yellow hood, large white duck on head, turns towards viewer LEFT, chin somewhat RAISED compared to bowing, BOTH eyes CLOSED. Preserve exact face tilt, size and position, tiny mouth, pink nose, duck shape and position, clothing. Rem short blue bob with viewer LEFT bangs, visible right eye closed curved black line, white flowers and dark crossed clips on viewer right. Remove all red long hair completely. Keep all golden butterflies and top Japanese lyrics unchanged. Image 2 is Rem hairstyle/identity reference only. Use its blue bob, white flower ornament and dark crossed clips; do not copy Image 2 composition. Exact Image 1 pose and flat drawing style mandatory.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f3348.png",
+  "role": "actual fabric and fingertip pixel source",
+  "tags": [
+    "f3348"
+  ],
+  "ranges": [
+    [
+      3342,
+      3349
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/sprite_overrides.py _bottom_continuation; registered_sprites/integration_report.json; continued_pixel_count=4896"
+  ],
+  "derivation": "Not registration-only: bottom fabric pixels are sampled into final RGBA"
+}

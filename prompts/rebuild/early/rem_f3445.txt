@@ -1,0 +1,31 @@
+Image: assets/rebuild/early/rem_f3445.png
+Role: complete redrawn character artwork
+Production path: work/rebuild/early/rem_f3445.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/early/additional_late_prompts_exact.json $[6].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. Edit the source animation frame by replacing the whole visible girl with Rem from Re:Zero: short light-blue bob ending naturally at nape, blue eyes, white flower hair ornament and red crossed hairclips. Match the simple black-outline flat-color anime PV style and exact source pose/head angle/body framing. COMPLETE contiguous new head, face, neck, shoulders, grey outer jacket, yellow hoodie and hands. CRITICAL: all burgundy/red long strips on chest and collar are OLD LONG HAIR, not ribbons/straps/hood strings. Remove ALL those strips and ALL old hair down to bottom edge; reconstruct uninterrupted natural skin, neck and yellow neckline beneath. No red hair or red chest straps anywhere. Only small red hairclips on blue bob allowed. Keep exact flower/hand/prop shape and placement. Remove all Japanese words and flying butterflies, replacing those areas with the same plain wine background. Preserve original16:9 composition and crop. One small VERTICAL portrait panel CENTER-LEFT at x~335–625,y~178–611 in1280x720 source. Preserve its EXACT original position,size,crop,black outline and ivory interior, including raised yellow shoulder/grey sleeve and neck. Portrait expression: head slightly LOWERED, HALF-LIDDED almost-closed eye looking downward, calm closed small mouth. Draw blue bob and white flower ornament, bangs covering one eye; the visible eye must be ALMOST CLOSED as in source. Crucial: dark-red vertical strip over the raised yellow shoulder and chest is old long hair, completely delete and reconstruct plain yellow fabric + skin, no red stripe/strap. Remove ALL butterflies and Japanese lettering outside panel so wine is clean. Same16:9 frame, do NOT enlarge or center panel.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/early/rem_f3445.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f3445"
+  ],
+  "ranges": [
+    [
+      3438,
+      3457
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f3445; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

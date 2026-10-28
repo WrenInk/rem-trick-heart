@@ -1,0 +1,28 @@
+Image: assets/revision3/late/flower_master_blink_gen.png
+Role: 花朵段闭眼眼睑像素来源
+Production path: work/revision3/late/flower_master_blink_gen.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/late/image_prompts.json $.prompts.flower_blink
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Image 1 is an already drawn Rem magician identity MASTER. Make exactly ONE change: close the visible blue eye into a gentle curved closed eyelid for a blink. Everything else must remain exactly identical: face shape and angle, mouth smile, short blue bob hair boundary and every strand/highlight, same exact white flowers, crossed hairpins, purple ribbon bow and TWO LONG ribbon tails, hat shape/position, neck body both shoulders red coat bow shirt hand extended palm and orange cuff. No new hair highlights, no deleting accessories, no shifting composition. Preserve full canvas 1672x941. Background remains same. This is a one-eye expression edit for consecutive animation frames, not a redesign.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/flower_master_blink_gen.png",
+  "role": "花朵段闭眼眼睑像素来源",
+  "ranges": [
+    [
+      2205,
+      2208
+    ]
+  ],
+  "evidence": "work/revision3/flower/render.py: self.closed只在tag f2206使用；blink配准后仅em眼睑多边形混入固定torso。",
+  "source_images": [],
+  "sha256": "78f6aaac3ecedad64f78311bdd7aea492e864331e9e111a2ff33ee4637c5065b",
+  "derivation": "没有单独保存闭眼master；保留这张直接参与闭眼像素合成的图，使用区域为配准后的眼睑多边形。"
+}

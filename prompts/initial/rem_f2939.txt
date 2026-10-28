@@ -1,0 +1,31 @@
+Image: assets/initial/rem_f2939.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_f2939.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/late_expression_prompts.json $.f2939
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Asset type: 1280x720 anime music-video replacement keyframe. Input image 1 is the edit target. Edit only the human character's head and hairstyle into Rem from Re:Zero: pale sky-blue short bob ending at jaw/neck; long side-swept bangs hide her own right eye (viewer LEFT); visible left eye vivid blue; little white flower hair ornament and two black hair clips on viewer RIGHT. Remove all old magenta/red long hair and giant spiral pigtails completely, restore the exact flat background formerly hidden there. Retain the original simple hand-drawn black outlines and flat cel colors, no extra rendering or shading. Keep original face position, expression, body, red magician suit or grey hoodie, hands, props, scenery, text and camera crop pixel-aligned and unchanged. Only hair and eyes need replacement, not costumes. Do not introduce a maid dress, new text or decoration. Landscape 16:9 1280x720. Magician closed-eye face appears at far RIGHT inside cream horizontal strip, tiny neutral mouth, heart paint on cheek and pink nose, both eyes CLOSED. Change all red bangs and spiral pigtails into short sky-blue Rem bob and remove spirals, viewer LEFT eye covered by blue bangs, viewer RIGHT CLOSED black eyelash curve. Keep original face scale, position, flat colors, cream horizontal panel, maroon bars, red suit neckline and exact Japanese subtitle unchanged. Do not shift panel or add new people. Image 2 is Rem hairstyle/identity reference only. Use its blue bob, white flower ornament and dark crossed clips; do not copy Image 2 composition. Exact Image 1 pose and flat drawing style mandatory.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_f2939.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "f2939"
+  ],
+  "ranges": [
+    [
+      2939,
+      2943
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f2939; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

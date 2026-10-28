@@ -1,0 +1,31 @@
+Image: assets/initial/rem_t005.png
+Role: complete redrawn character artwork
+Production path: work/assets/rem_t005.png
+Association status: mapped
+
+Prompt 1
+Source record: work/assets/main_prompts.json $[0].prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit target: attached original animation PV frame at 5 seconds. Replace the red-haired girl inside the rectangular portrait with Rem (雷姆) from Re:Zero, light sky-blue short bob haircut with fringe covering her right eye (viewer left), visible blue left eye, tiny white hair ribbon/flower and dark hairpins. Keep her surprised mouth, head tilt, face scale and the exact original simple hand-drawn flat-color anime line art. Keep the original gray hoodie and pale yellow inner hood, matching pose; only change character identity, face and hairstyle. Remove all original long red hair inside the portrait, replacing exposed areas with the original ivory background. Preserve absolutely the wine-red background, portrait rectangle edges, Japanese lyric, composition and all pixels outside the portrait. Output a landscape 1280x720 frame with exactly the same layout and no added words or objects.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/assets/rem_t005.png",
+  "role": "complete redrawn character artwork",
+  "tags": [
+    "t005"
+  ],
+  "ranges": [
+    [
+      86,
+      163
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag t005; no later sprite override"
+  ],
+  "derivation": "character ROI extraction and motion registration"
+}

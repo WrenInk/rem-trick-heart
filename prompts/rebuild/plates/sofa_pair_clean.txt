@@ -1,0 +1,30 @@
+Image: assets/rebuild/plates/sofa_pair_clean.png
+Role: clean sofa background
+Production path: work/rebuild/plates/sofa_pair_clean.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/plates/clean_plate_prompts.json $.sofa_pair_clean
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Create a CLEAN BACKGROUND PLATE for the supplied hand-drawn animation frame. Remove BOTH seated human characters entirely including ALL hair, heads, faces, necks, shoulders, bodies, clothing, arms, hands, legs, shoes, hats and accessories. Remove the white duck on the head and white rabbit on the lap as well, because those props will be separate layers. Reconstruct the empty gray sofa, its backrest, seat and existing pillows behind the removed people, with the exact original simple flat hand-drawn black outlines and gray colors. Reconstruct the plain dark red background/floor behind removed heads and feet. Remove Japanese text ; these will also be separate source layers. KEEP the sleeping dog in the foreground, the sofa's exact shape and location, the side cabinet, glass, potted plant, and all their proportions exactly unchanged. No people, no human silhouettes, no floating hands, no extra pillows or props. Preserve original 1280x720 landscape layout precisely. This is an empty set, not a redesigned scene.
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/plates/sofa_pair_clean.png",
+  "role": "clean sofa background",
+  "tags": [
+    "t120"
+  ],
+  "ranges": [
+    [
+      2785,
+      2939
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose.apply sofa plate"
+  ]
+}

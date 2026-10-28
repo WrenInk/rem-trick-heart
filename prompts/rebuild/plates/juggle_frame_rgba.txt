@@ -1,0 +1,26 @@
+Image: assets/rebuild/plates/juggle_frame_rgba.png
+Role: 抛球段空纸画框RGBA
+Production path: work/rebuild/plates/juggle_frame_rgba.png
+Association status: programmatic_or_source_layer
+
+No independently recorded generation prompt applies to this image. See the derivation or missing-record note below.
+
+Record notes
+work/rebuild/plates/juggle_frame_rgba.png: 原PV空画框抽离，未包含人物像素；不是生图素材。
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/rebuild/plates/juggle_frame_rgba.png",
+  "role": "抛球段空纸画框RGBA",
+  "ranges": [
+    [
+      2472,
+      2777
+    ]
+  ],
+  "evidence": "work/revision3/late/compose.py: frame_plate直接决定domain并最后over；2777–2784无POSE tag直接返回源片。",
+  "source_images": [],
+  "sha256": "be292a34b69c6492385e1607fdaa35319832b50a3eedac491df535d162d9a10c",
+  "derivation": "与V2同一画框图，实际用于V3最终抛球。"
+}

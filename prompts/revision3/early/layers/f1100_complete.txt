@@ -1,0 +1,35 @@
+Image: assets/revision3/early/layers/f1100_complete.png
+Role: 统一头饰完整人物RGBA
+Production path: work/revision3/early/layers/f1100_complete.png
+Association status: mapped
+
+Prompt 1
+Source record: work/revision3/early/generation_prompts.json $[1].prompt
+Association: explicit_field
+Evidence: 原记录明确列出 output
+
+Use case: precise-object-edit. Image1 is an existing Rem animation frame to correct; Image2 is the AUTHORITATIVE accessory/identity reference. Change ONLY Image1 hair accessories to exactly Image2's same design, projected onto Image1 head pose. REMOVE the incorrect flower crown going across the TOP/FRONT of head. Reconstruct continuous short BLUE hair where crown was removed. Put the SAME narrow side ornament as Image2 on the VIEWER-RIGHT TEMPLE beside visible eye: two prominent white four-petal flowers linked by the short white-petal chain on its dark stem; below them the SAME dark-crimson multi-loop bow with two slim white hanging ribbons; retain the SAME dark wine/crimson X-shaped clip on the fringe beside that eye. This is one SIDE flower chain, NOT a maid headband, NOT a wreath/crown around whole scalp. Match Image2 flower count, petal shapes, bow shape, clip color and relative attachment points. Do NOT copy Image2 facial pose: preserve Image1 face/expression, head angle/scale/location, eye and mouth, full neck/body, yellow hoodie/grey jacket, panel black border, background, lighting and composition exactly. Do not enlarge or center. Entire16:9 original frame, no new red hair strands. Keep all original visible body pixels coherent. Preserve the surprised OPEN visible blue eye and small O mouth, tilted head and upper torso of Image1.
+
+Derivation
+{"from": "work/revision3/early/layers/f1100_complete.png", "to": "work/revision3/early/rem_f1100_accessory.png", "evidence": ".git/final-assets-v3.json", "derivation": "完整新角色图 → engine.Pose抠取人物 → complete；原生成图不另归档。", "relationship": "pixel_source"}
+{"from": "work/revision3/early/layers/f1100_complete.png", "to": "work/revision3/early/rem_f1100_accessory.png", "evidence": "work/revision3/early/turn_registration.json $[1]", "derivation": "new_asset 经配准、透明层或完整人物提取生成 new_person_rgba", "relationship": "pixel_source"}
+{"from": "work/revision3/early/layers/f1100_complete.png", "to": "work/revision3/early/rem_f1100_accessory.png", "evidence": "work/revision3/early/render_repairs.py", "derivation": "从配饰修正后的完整 NEW 人物提取RGBA层", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/early/layers/f1100_complete.png",
+  "role": "统一头饰完整人物RGBA",
+  "ranges": [
+    [
+      1099,
+      1103
+    ]
+  ],
+  "evidence": "work/revision3/early/render_repairs.py: repair_turn取pose.sprites[0]导出complete层；engine对应tag无更高优先registered/preplaced覆盖。",
+  "source_images": [
+    "work/revision3/early/rem_f1100_accessory.png"
+  ],
+  "sha256": "e0019815cc70e170b72fe6909249e9dda7660ddf6fe0e4757a48787288c8420a",
+  "derivation": "完整新角色图 → engine.Pose抠取人物 → complete；原生成图不另归档。"
+}

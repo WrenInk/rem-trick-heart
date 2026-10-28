@@ -1,0 +1,36 @@
+Image: assets/rebuild/root_assets/registered_f0910.png
+Role: final registered complete RGBA
+Production path: work/rebuild/root_assets/registered_f0910.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/audit/clean_caption_sprite_prompts.json $.f0910
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Precise animation sprite repair/extraction. Use attached existing NEW Rem image as exact edit target. Return genuine alpha TRANSPARENT RGBA, same wide canvas and exact same pixel-relative character placement, scale, crop, body pose and face expression. Keep the ENTIRE connected visible character: blue short bob, face, neck/shoulders, clothes, all accessories, hands and fingers. Remove ALL Japanese text, every text stroke and every text drop shadow, wherever it overlaps blue hair, face, hat or clothes. Restore the actual unobscured blue hair/hat/clothing beneath every removed letter; no letter-shaped scar, outline, cutout, blur or patch. Remove all floating white dots/bubbles and external decorative specks. Remove the burgundy background completely. Keep real white flower hair accessories, eye highlights, shirt and gloves; these are character, not dots. No new framing, no recentering, no rescaling, no extra limbs, no captions, no checkerboard background, no solid-colored background. Only character is opaque. Flat cel style and thin original black outlines unchanged. Exact same 16:9 composition, ideally 1672x941. Keep the smiling eyes CLOSED magician Rem, tilted head, black-white diamond top hat, burgundy jacket, orange cuffs and both white-glove gestures. Remove the RABBIT completely from the viewer-RIGHT upturned hand. Draw a complete clean EMPTY white upturned palm and original fingers below where the rabbit sat, with no rabbit, white ghost blob, red patch, ears or circular hole. Keep the viewer-LEFT glove touching hat unchanged. Restore black/white diamond hat design under the top caption and burgundy sleeve under bottom-right caption. Preserve hat top cropped by canvas exactly; never shrink hat or actor to fit.
+
+Derivation
+{"from": "work/rebuild/root_assets/registered_f0910.png", "to": "work/rebuild/root_assets/sprite_f0910.png", "evidence": ".git/final-assets-v2.json", "derivation": "registered by work/rebuild/audit/clean_caption_sprite_registration.json", "relationship": "pixel_source"}
+{"from": "work/rebuild/root_assets/registered_f0910.png", "to": "work/rebuild/root_assets/sprite_f0910.png", "evidence": "work/rebuild/audit/clean_caption_sprite_registration.json $.f0910", "derivation": "raw_path 经配准、透明层或完整人物提取生成 registered_path", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v2.json",
+  "path": "work/rebuild/root_assets/registered_f0910.png",
+  "role": "final registered complete RGBA",
+  "tags": [
+    "f0910"
+  ],
+  "ranges": [
+    [
+      901,
+      930
+    ]
+  ],
+  "evidence": [
+    "work/rebuild/engine.py Pose and timeline tag f0910; registered_TAG override wins"
+  ],
+  "source_image": "work/rebuild/root_assets/sprite_f0910.png",
+  "derivation": "registered by work/rebuild/audit/clean_caption_sprite_registration.json"
+}

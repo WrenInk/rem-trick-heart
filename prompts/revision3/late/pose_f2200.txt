@@ -1,0 +1,34 @@
+Image: assets/revision3/late/pose_f2200.png
+Role: 花朵段可见手臂RGBA来源
+Production path: work/revision3/late/pose_f2200.png
+Association status: mapped
+
+Prompt 1
+Source record: work/rebuild/root_assets/f2200_prompt.json $.prompt
+Association: tag_and_pipeline
+Evidence: 该阶段图像已在最终像素派生链中；按同阶段唯一标签及提示词语义关联。原调用未明确保存output字段，不等同显式调用绑定。
+
+Use case: precise-object-edit. Edit source frame 2200 into a complete coherent Rem from Re:Zero in the SAME visible magician costume and exact pose. Short sky-blue bob with bangs covering own right eye (viewer left), visible blue left eye open, white flower ornament and dark crossed hairpins. Preserve this exact eyes-open sideways glance, subtle smile, open palm extended to left, shoulder angle, red suit, black hat, white shirt/bow/glove and yellow cuff. Draw face, neck, collar, shoulders and complete arm/body as one continuous finished illustration. Remove all original red hair and spiral drill pigtails. Remove floating golden petals and Japanese words, leaving flat burgundy background; those elements are separate animation layers. Exact source framing and object positions, original flat hand-drawn anime line style, 1280x720 landscape, no other character.
+
+Derivation
+{"from": "work/revision3/late/pose_f2200.png", "to": "work/rebuild/root_assets/rem_f2200.png", "evidence": ".git/final-assets-v3.json", "derivation": "export_poses.py导出engine最终sprite；本模块只用左侧手臂及肩部区域，头身由master_rgba覆盖。", "relationship": "pixel_source"}
+{"from": "work/revision3/late/pose_f2200.png", "to": "work/rebuild/root_assets/rem_f2200.png", "evidence": "work/revision3/late/export_poses.py + work/rebuild/engine.py:414-446", "derivation": "按pose_export配置别名及引擎覆盖优先级导出的最终人物像素；源帧仅用于几何配准", "relationship": "pixel_source"}
+
+Final-use evidence
+{
+  "selection_file": ".git/final-assets-v3.json",
+  "path": "work/revision3/late/pose_f2200.png",
+  "role": "花朵段可见手臂RGBA来源",
+  "ranges": [
+    [
+      2197,
+      2213
+    ]
+  ],
+  "evidence": "work/revision3/flower/render.py: self.arms使用pose图乘arm_gate；f2206/t092复用f2200手臂，其他姿态使用同名pose。",
+  "source_images": [
+    "work/rebuild/root_assets/rem_f2200.png"
+  ],
+  "sha256": "0454dd623739593539849082e939ce44d7b5c1a0bfe4fe3bade2e062caae5c68",
+  "derivation": "export_poses.py导出engine最终sprite；本模块只用左侧手臂及肩部区域，头身由master_rgba覆盖。"
+}
